@@ -1,20 +1,19 @@
+clc;
+clear all;
+
 %% DATA
-Rt = 6371;
-G = 6.67e-11;
-Mt = 5.97e24;
-mu = G * Mt;
-Vinf = 3e5*[10,1,0]; % geocentric velocity when going out of Earth Influence zone
+load('DATA.mat');
+% geocentric velocity when going out of Earth Influence zone in the K system
+Vinf = 3e5*[10,1,0];
+% geocentric velocity in ECI
+Vinf_eci = rotx(-earth.epsilon)*Vinf';
+% normalized Vinf_eci
+vinf_eci = Vinf_eci/norm(Vinf_eci);
 
 %% parkingOrbit
 h = 1000;
-r = Rt + h;
-Vo = sqrt(mu/r); % velocity at parking orbit;
-
-a = r;
-e = 0;
-i = 
-Omega = 
-omega = 
+ro = earth.R + h;
+Vo = sqrt(earth.mu/ro); % velocity at parking orbit;
 
 %% deltaV
 deltaV = sqrt(norm(Vinf)^2+2*Vo)-Vo;
@@ -25,3 +24,12 @@ e = 1 + (Vinf/Vo)^2;
 beta = acos(1/e);
 b = a*sqrt(e^2-1);
 % y = ((x+a*e)/(a^2)-1)*b^2;
+
+%% elements
+% r i v de la sonda on s'ha d'aplicar delta V. Punt I en figura 5.26.
+
+%!! ARA R ES DEL PUNT C EN L_ORBITA. NO SE COM PASSAR A PUNT I (amb Beta)
+r = ro*[ -vinf_eci(1), -vinf_eci(2), -vinf_eci(3)];
+v = 1000*[-12,3,-2];
+% element orbitals del punt I en sistema ECI
+elem = rToElementsECI(r,v,earth);

@@ -1,13 +1,6 @@
-%function elem = rToElementsECI(r,v,mu)
-clc;
-clear all;
-G = 6.67e-11;
-Mt = 5.97e24;
-%mu = G * Mt;
-mu = 3.986005e14;
+function elem = rToElementsECI(r,v,earth)
+mu = earth.mu;
 elem = struct('a',0,'e',0,'i',0,'Omega',0,'omega',0,'theta',0,'M',0);
-r = 1000*[ 10000, 4000, -4000];
-v = 1000*[-12,3,-2];
 %% angular moment L and total energy E
 L = cross(r,v);
 E = 0.5*norm(v)^2-mu/norm(r);
@@ -67,4 +60,4 @@ elem.Omega = Omega/pi*180;
 elem.omega = omega/pi*180;
 elem.theta = theta/pi*180;
 elem.M = M;
-%end
+end
