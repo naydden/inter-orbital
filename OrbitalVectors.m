@@ -37,12 +37,12 @@ end
 E0=M+e*sin(M); %Initial excentric anomaly
 if e<1 %Elyptic case
     p=a*(1-e^2); %Conic parameter
-    for i=1:10 %Newton-Rapson
+    for i=1:20 %Newton-Rapson
         E=E0+(M-E0+e*sin(E0))/(1-e*sin(E0));
         E0=E;
     end
     theta=2*atan(sqrt((1+e)/(1-e))*tan(E/2)); %True anomaly
-    r_mod=a*(1-e*cosh(E)); %Modulus of the position vector
+    r_mod=a*(1-e*cos(E)); %Modulus of the position vector
 else %Hyperbolic case
     p=a*(e^2-1); %Conic parameter
     if e<1.6     
@@ -58,7 +58,7 @@ else %Hyperbolic case
             F0=M/(e-1); %Initial hyperbolic anomaly
         end
     end
-    for i=1:10 %Newton Rapson
+    for i=1:20 %Newton Rapson
         F=F0+(M-e*sinh(F0)+F0)/(e*cosh(F0)-1);
         F0=F;
     end
