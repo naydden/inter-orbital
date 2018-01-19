@@ -3,7 +3,7 @@ function [r,v,theta] = OrbitalVectors (t,mu,a,e,I,RAAN,AP,M0,t0)
 %and the true anomaly (theta) for a given orbital parameters
 %
 %Inputs
-%t: Time at which to compute the outputs [s]
+%t: Time at which to compute the outputs, in JD [days]
 %mu: Gravitational constant multipied by the mass of the central body (G*M)
 %    [N*m^2/kg^2]
 %a: Major semiaxis [m]
@@ -12,7 +12,7 @@ function [r,v,theta] = OrbitalVectors (t,mu,a,e,I,RAAN,AP,M0,t0)
 %RAAN: Right ascension of the ascending node [º]
 %AP: Argument of the perigee [º]
 %M0: Mean anomaly at a reference time [º]
-%t0: Reference time [s]
+%t0: Reference time in JD [days]
 %
 %Outputs
 %r: Vector for the posicion of the orbiting object in the same system of
@@ -27,7 +27,7 @@ AP=deg2rad(AP); %Argument of the perigee in rad
 M0=deg2rad(M0); %Mean anomaly at reference time t0 in rad
 
 T=sqrt(4*pi^2*a^3/mu); %Period [s]
-n=2*pi/T; %Mean motion [rad/s]
+n=2*pi/(T/3600/24); %Mean motion [rad/s]
 M=M0+n*(t-t0); %Mean anomaly [rad]
 M=wrapTo2Pi(M); %Mean anomaly between 0 and 2pi
 if M>pi
