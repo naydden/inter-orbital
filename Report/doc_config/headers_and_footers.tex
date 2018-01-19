@@ -1,0 +1,71 @@
+%	HEADERS AND FOOTERS
+
+% Changes default margins.
+\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry}
+   \setlength{\headheight}{50pt}         % Header Space.
+   \setlength{\textheight}{640pt}        % Text height.
+   \setlength{\footskip}{30pt}           % Foot Space.
+
+\usepackage{fancyhdr}
+	\pagestyle{fancy} % Headers and footers -> "fancy" style.
+	\fancyhf{} % Clear all headers and footers fields
+
+%-----------------------------------------------
+% General headers and footers of the document:
+%-----------------------------------------------
+	% Headers
+	\fancyhead[LO]{\textbf{\textit{Aerodinàmica d’un planejador}}} % Section mark
+	\fancyhead[RO]{\includegraphics[height=35pt]{./doc_config/image}}
+	\fancyhead[LE]{\textbf{\textit{Aerodinàmica d’un planejador}}}
+	\fancyhead[RE]{\includegraphics[height=35pt]{./doc_config/image}}
+	
+	% Footers
+	\fancyfoot[CE,CO]{\thepage}
+	
+	\renewcommand{\headrulewidth}{0.5pt} % Header decorative line
+	\renewcommand{\footrulewidth}{0.5pt} % Footer decorative line
+	\renewcommand{\chaptermark}[1]{%
+		\markboth{#1}{}}
+	\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+
+%-----------------------------------------------
+% Headers and footers for pages where chapter starts:
+%-----------------------------------------------
+\fancypagestyle{plain}{
+	%Headers
+	\fancyhead[LO]{\textbf{\textit{Aerodinàmica d’un planejador}}} % Section mark
+	\fancyhead[RO]{\includegraphics[height=35pt]{./doc_config/image}}
+	\fancyhead[LE]{\textbf{\textit{Aerodinàmica d’un planejador}}}
+	\fancyhead[RE]{\includegraphics[height=35pt]{./doc_config/image}}
+	%Footers
+	\fancyfoot[CE]{\thepage}
+	\fancyfoot[CO]{\thepage}
+	
+	\renewcommand{\headrulewidth}{0.5pt} % Header decorative line
+	\renewcommand{\footrulewidth}{0.5pt} % Footer decorative line
+}
+
+
+%-----------------------------------------------
+% Cover headers and footers:
+%-----------------------------------------------
+
+	\fancypagestyle{CoverPage}{ % This creates a new headers and footers page style.
+	                            % To use it type "\thispagestyle{FirstPage}" on the first page.
+	                                % (right after "\maketitle")
+		\fancyhf{}
+		\renewcommand{\headrulewidth}{0pt}
+		\renewcommand{\footrulewidth}{0pt}
+	}
+
+
+%-----------------------------------------------
+% No headers nor footers page (ie: Back cover)
+%-----------------------------------------------
+
+	\fancypagestyle{EmptyPage}{
+		\fancyhf{}
+		\renewcommand{\headrulewidth}{0pt}
+		\renewcommand{\footrulewidth}{0pt}
+	}
