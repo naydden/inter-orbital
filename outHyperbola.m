@@ -24,14 +24,15 @@ I_e=0.00005;
 RAAN_e=348.73936;
 AP_e=114.20783;
 M0_e=358.617;
+t0_e=0;
 
 %% Velocities
 
 % Earth vector
-[~,v_Tierra,~] = OrbitalVectors (t,earth.mu,a_e,e_e,I_e,RAAN_e,AP_e,M0_e,t0);
+[~,v_Tierra,~] = OrbitalVectors (t,earth.mu,a_e,e_e,I_e,RAAN_e,AP_e,M0_e,t0_e);
 
 % Spacecraft orbit
-[~,v_1,~] = OrbitalVectors (t,earth.mu,a_s,e_s,i_s,Omega_s,omega_s,M0_s,t0);
+[~,v_1,~] = OrbitalVectors (t,earth.mu,a_s,e_s,i_s,Omega_s,omega_s,M0_s,0);
 
 % Geocentric velocity
 Vinf=v_1-v_Tierra;

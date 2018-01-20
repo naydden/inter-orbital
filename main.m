@@ -26,7 +26,6 @@ deltat = t2-t1;
 [a, e, theta1, w, i, Omega] = orbita_interplanetaria(r1,r2,deltat);
 
 %% Part 2: Exit. Parking orbit, deltaV and hyperbolic trajectory
-
 [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t1,a,e,i,Omega,w,theta1);
 
 %% Part 3: Arrival. Hyperbolic trajectory, deltaV and parking orbit
