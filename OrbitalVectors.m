@@ -25,9 +25,11 @@ I=deg2rad(I); %Inclination in rad
 RAAN=deg2rad(RAAN); %Right ascension of the ascending node in rad
 AP=deg2rad(AP); %Argument of the perigee in rad
 M0=deg2rad(M0); %Mean anomaly at reference time t0 in rad
+t=t*24*3600; %Time in seconds
+t0=t0*24*3600; %Reference time in seconds
 
 T=sqrt(4*pi^2*a^3/mu); %Period [s]
-n=2*pi/(T/3600/24); %Mean motion [rad/s]
+n=2*pi/T; %Mean motion [rad/s]
 M=M0+n*(t-t0); %Mean anomaly [rad]
 M=wrapTo2Pi(M); %Mean anomaly between 0 and 2pi
 if M>pi
