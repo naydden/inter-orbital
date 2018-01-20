@@ -10,5 +10,6 @@
 \contentsline {section}{\numberline {4.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{4}{section.4.1}
 \contentsline {section}{\numberline {4.2}\IeC {\`O}rbita d'aparcament}{4}{section.4.2}
 \contentsline {section}{\numberline {4.3}DeltaV}{4}{section.4.3}
-\contentsline {chapter}{\numberline {5}Resultats}{5}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{6}{chapter.6}
+\contentsline {chapter}{\numberline {5}Funcions auxiliars}{5}{chapter.5}
+\contentsline {chapter}{\numberline {6}Resultats}{6}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusions}{7}{chapter.7}
