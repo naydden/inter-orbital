@@ -1,17 +1,17 @@
-year=2023;
-month=5;
-day=27;
+year=2021;
+month=1;
+day=25;
 
 t=JulianDate(year,month,day); %Time
 
 mu=1.3271741784e20; %Gravitational constant x Mass of central body
 
-a=149598023000; %Major semiaxis
-e=0.0167086; %Excentricity
-I=0.00005; %Inclination
-RAAN=-11.26064; %Right ascension of the ascending node
-AP=114.20783; %Argument of the perigee
-M0=358.617; %Mean anomaly at reference time
+a=227939200000; %Major semiaxis
+e=0.0934; %Excentricity
+I=1.850; %Inclination
+RAAN=49.558; %Right ascension of the ascending node
+AP=286.502; %Argument of the perigee
+M0=19.3564; %Mean anomaly at reference time
 t0=JulianDate(2000,1,1); %Reference time
 
 [r,v,theta] = OrbitalVectors (t,mu,a,e,I,RAAN,AP,M0,t0);
