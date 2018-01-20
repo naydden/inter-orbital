@@ -35,9 +35,11 @@ if M>pi
 end
 
 E0=M+e*sin(M); %Initial excentric anomaly
+error=1e-8;
 if e<1 %Elyptic case
     p=a*(1-e^2); %Conic parameter
-    for i=1:20 %Newton-Rapson
+    E=1;
+    while abs(E-E0)>error %Newton-Rapson
         E=E0+(M-E0+e*sin(E0))/(1-e*sin(E0));
         E0=E;
     end
@@ -58,7 +60,8 @@ else %Hyperbolic case
             F0=M/(e-1); %Initial hyperbolic anomaly
         end
     end
-    for i=1:20 %Newton Rapson
+    F=1;
+    while abs(F-F0)>error %Newton Rapson
         F=F0+(M-e*sinh(F0)+F0)/(e*cosh(F0)-1);
         F0=F;
     end
