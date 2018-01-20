@@ -36,6 +36,9 @@ theta1 = wrapTo360(rad2deg(S.theta1)); % posició inicial en l'òrbita [º]
 % Càlcul de la inclinació per trigonometria esfèrica
 A = asin(cos(beta2)*sin(deltalambda)/sin(deltatheta)); % [rad]
 i = acos(sin(A)*cos(beta1)); % [rad]
+if beta1<0
+    i = 2*pi-i;
+end
 l = asin(tan(beta1)/tan(i)); % [rad]
 
 %  we need to check the members of the tangent here in order to decide
@@ -44,6 +47,9 @@ sigma = atan(tan(beta1)/cos(A)); % [rad]
 
 Omega = lambda1-l; % [rad]
 w = 2*pi-(deg2rad(theta1)-sigma); % [rad]
+if w<0
+    w = -w;
+end
 
 if(i<0)
     i = abs(i);
