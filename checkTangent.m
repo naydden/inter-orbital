@@ -11,4 +11,5 @@ function angle = checkTangent(result,num,den)
     else
         angle = result;
     end
+    rad2deg(angle)
 end

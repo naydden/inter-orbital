@@ -1,3 +1,14 @@
 \contentsline {chapter}{Llista de taules}{ii}{section*.1}
 \contentsline {chapter}{Llista de figures}{iii}{section*.2}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}\IeC {\`O}rbita el\IeC {\textperiodcentered }l\IeC {\'\i }ptica helioc\IeC {\`e}ntrica}{2}{chapter.2}
+\contentsline {chapter}{\numberline {3}Sortida del planeta origen}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{3}{section.3.1}
+\contentsline {section}{\numberline {3.2}\IeC {\`O}rbita d'aparcament}{3}{section.3.2}
+\contentsline {section}{\numberline {3.3}DeltaV}{3}{section.3.3}
+\contentsline {chapter}{\numberline {4}Arribada al planeta dest\IeC {\'\i }}{4}{chapter.4}
+\contentsline {section}{\numberline {4.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{4}{section.4.1}
+\contentsline {section}{\numberline {4.2}\IeC {\`O}rbita d'aparcament}{4}{section.4.2}
+\contentsline {section}{\numberline {4.3}DeltaV}{4}{section.4.3}
+\contentsline {chapter}{\numberline {5}Resultats}{5}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{6}{chapter.6}

@@ -42,7 +42,6 @@ deltat = t2-t1;
 [r1_E,v1_E,theta1_E] = OrbitalVectors (t1,mu,a_E,e_E,I_E,RAAN_E,AP_E,M0_E,t0);
 [r2_M,v2_M,theta2_M] = OrbitalVectors (t2,mu,a_M,e_M,I_M,RAAN_M,AP_M,M0_M,t0);
 
-
 %% Part 1: Heliocentric elliptic trajectory
 [a, e, theta1, w, i, Omega] = orbita_interplanetaria(r1_E,r2_M,deltat);
 E=acosd((e+cosd(theta1))/(1+e*cosd(theta1)));
