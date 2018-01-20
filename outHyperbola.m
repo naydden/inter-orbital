@@ -1,4 +1,4 @@
-function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s,e_s,i_s,Omega_s,omega_s, M0_s,t0)
+function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s,e_s,i_s,Omega_s,omega_s, theta1)
 %  function that gets orbital elements of the elliptic trajectory and
 %  obtains deltaV, the parking Orbit before exit and the hyperbolic
 %  trajectory
@@ -7,6 +7,12 @@ function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s,e_s,i_s,Ome
 %  hyperbolaExit (struct) -> a, e i b
 %  parkingOrbit (struct) -> a,e,i,Omega,omega,theta,M
 %  deltaV necessary is in Ecliptic coordinate system
+
+
+t0=0;
+M0_s=359.7033431;
+
+
 
 %% DATA
 load('DATA.mat');
@@ -25,7 +31,6 @@ M0_e=358.617;
 [~,v_Tierra,~] = OrbitalVectors (t,earth.mu,a_e,e_e,I_e,RAAN_e,AP_e,M0_e,t0);
 
 % Spacecraft orbit
-M0_s=359.7033431;
 [~,v_1,~] = OrbitalVectors (t,earth.mu,a_s,e_s,i_s,Omega_s,omega_s,M0_s,t0);
 
 % Geocentric velocity
@@ -55,8 +60,8 @@ hyperbolaExit.b = a*sqrt(e^2-1);
 
 %% parking orbit
 
-% PUNT C
-% r. Oposat a Vinf
+% POINT C
+% r is an oposed vector to vinf_eci with the radius of the orbit
 r = ro*[ -vinf_eci(1), -vinf_eci(2), -vinf_eci(3)];
 % v. 
 n_plano = cross(VTierra_eci,Vinf_eci);
@@ -66,17 +71,16 @@ v = Vo*v/norm(v);
 
 elem = rToElementsECI(r,v,earth);
 
-% Ara a punt I
+% In PQW system
 r_pqw = [ro,0,0];
-% gir r_pqw to beta angle
+% rotation of r_pqw to beta angle. Point I
 r_pqw_beta = rotz(pi+beta)*r_pqw';
-% from pqw to ijk
+% PQW2IJK
 r_ijk_beta = rotz(-elem.Omega)*rotx(-elem.i)*rotz(-elem.omega)*r_pqw_beta;
-% from ijk to eci
+% IJK2ECI
 r_eci_beta = rotx(-earth.epsilon)*r_ijk_beta';
-% torno a obtenir r i v pero ara en I de la fig 5.42
+% Velocity at I
 v_eci_beta = cross(r_eci_beta,n_plano);
-% velocitat de la sonda per la direccio de v
 v_eci_beta = Vo*v/norm(v_eci_beta);
 
 parkingOrbit = rToElementsECI(r_eci_beta,v_eci_beta,earth);
