@@ -28,7 +28,7 @@ AP_s=0.470;
 M0_s=359.7033431;
 t0_s=t;
 
-% Earth vectors
+% S/C vectors
 [r_s,v_s,theta_s] = OrbitalVectors (t,mu,a_s,e_s,I_s,RAAN_s,AP_s,M0_s,t0_s);
 
 % Geocentric velocity

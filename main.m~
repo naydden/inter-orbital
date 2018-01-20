@@ -1,0 +1,56 @@
+
+%% Patched Conics. Interplanetary Trajectories.
+% Authors:
+%   - Silvia Gonzalez
+%   - Laura Pla
+%   - Josep Maria Serra Moncunill
+%   - Boyan Naydenov
+% Subject: Aerodynamics, Flight and Orbital Mechanics.
+% Date: January 20th, 2018
+
+%%
+clear
+clc
+
+%% Data
+load('DATA.mat');
+
+r1 = [0.4537 -0.9094 0];
+r2 = [0.3148 1.5078 0.0239];
+t0=0;
+t1 = JulianDate(2020,7,19);
+t2 = JulianDate(2021,1,25);
+deltat = t2-t1;
+
+%% Part 1: Heliocentric elliptic trajectory
+[a, e, theta1, w, i, Omega] = orbita_interplanetaria(r1,r2,deltat);
+
+%% Part 2: Exit. Parking orbit, deltaV and hyperbolic trajectory
+
+% Earth orbit
+a_e=149598023000;
+e_e=0.0167086;
+I_e=0.00005;
+RAAN_e=348.73936;
+AP_e=114.20783;
+M0_e=358.617;
+
+% Earth vectors
+[~,vTierra,~] = OrbitalVectors (t1,earth.mu,a_e,e_e,I_e,RAAN_e,AP_e,M0_e,t0);
+
+% Spacecraft orbit
+M0_s=359.7033431;
+[~,v_1,~] = OrbitalVectors (t1,earth.mu,a,e,i,Omega,w,M0_s,t0);
+
+% Geocentric velocity
+Vinf=v_1-vTierra;
+
+% geocentric velocity in ECI
+Vinf_eci = rotx(-earth.epsilon)*Vinf';
+VTierra_eci = rotx(-earth.epsilon)*vTierra';
+% normalized Vinf_eci
+vinf_eci = Vinf_eci/norm(Vinf_eci);
+
+%% Part 3: Arrival. Hyperbolic trajectory, deltaV and parking orbit
+
+%% Part 4: Results Presentation

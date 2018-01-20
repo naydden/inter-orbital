@@ -1,4 +1,4 @@
-function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s,e_s,i_s,Omega_s,omega_s, M0_s,t0)
+function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s
 %  function that gets orbital elements of the elliptic trajectory and
 %  obtains deltaV, the parking Orbit before exit and the hyperbolic
 %  trajectory
@@ -26,7 +26,7 @@ M0_e=358.617;
 
 % Spacecraft orbit
 M0_s=359.7033431;
-[~,v_1,~] = OrbitalVectors (t,earth.mu,a_s,e_s,i_s,Omega_s,omega_s,M0_s,t0);
+[~,v_1,~] = OrbitalVectors (t,earth.mu,a,e,i,Omega,w,M0_s,t0);
 
 % Geocentric velocity
 Vinf=v_1-v_Tierra;

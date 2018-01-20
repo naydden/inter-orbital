@@ -1,4 +1,6 @@
 function elem = rToElementsECI(r,v,earth)
+% function that computes the ECI keplerian elements given r and v of the
+% spacecraft in the ECI coordinate system.
 mu = earth.mu;
 elem = struct('a',0,'e',0,'i',0,'Omega',0,'omega',0,'theta',0,'M',0);
 %% angular moment L and total energy E
