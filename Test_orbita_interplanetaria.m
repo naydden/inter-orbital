@@ -16,17 +16,17 @@
 % t1 = JulianDate(2020,3,6);
 % t2 = JulianDate(2020,6,9);
 % 
-% Cas 1 de Mart a Júpiter
-r1 = [1.0707 0.9868 -0.0055];
-r2 = [-5.2210 1.4357 0.1109];
-t1 = JulianDate(2037,10,25);
-t2 = JulianDate(2039,10,15);
-
-% % Cas 2 de la Terra a Mart
-% r1 = [-0.9848 0.1338 -0];
-% r2 = [0.6797 -1.2298 -0.0424];
-% t1 = JulianDate(2033,3,13);
-% t2 = JulianDate(2033,8,5);
+% % Cas 1 de Mart a Júpiter
+% r1 = [1.0707 0.9868 -0.0055];
+% r2 = [-5.2210 1.4357 0.1109];
+% t1 = JulianDate(2037,10,25);
+% t2 = JulianDate(2039,10,15);
+% 
+% Cas 2 de la Terra a Mart
+r1 = [-0.9848 0.1338 -0];
+r2 = [0.6797 -1.2298 -0.0424];
+t1 = JulianDate(2033,3,13);
+t2 = JulianDate(2033,8,5);
 % 
 % % Cas 3 de la Terra a Mart
 % r1 = [-0.5264 0.8316 0.0001];

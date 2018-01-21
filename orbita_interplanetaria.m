@@ -31,19 +31,29 @@ S = solve(eqn1,eqn2,eqn3);
 
 e = S.e; % excentricitat
 a = S.a; % semieix major
-theta1 = wrapTo360(rad2deg(S.theta1)); % posició inicial en l'òrbita [º]
+theta1 = wrapTo2Pi(double(S.theta1)); % posició inicial en l'òrbita [rad]
+
+% Correcció per si surt e negatiu
+if e<0
+    e = -e;
+    theta1 = theta1+pi;
+end
+
 
 % Càlcul de la inclinació per trigonometria esfèrica
 A = asin(cos(beta2)*sin(deltalambda)/sin(deltatheta)); % [rad]
 i = acos(sin(A)*cos(beta1)); % [rad]
+if i>pi/2
+    i = i-pi;
+end
 l = asin(tan(beta1)/tan(i)); % [rad]
+if beta1<0 && l>0
+    l = -l;
+end
 
-%  we need to check the members of the tangent here in order to decide
-%  sigma
 sigma = atan(tan(beta1)/cos(A)); % [rad]
-
 Omega = lambda1-l; % [rad]
-w = 2*pi-(deg2rad(theta1)-sigma); % [rad]
+w = 2*pi-(theta1-sigma); % [rad]
 
 if(i<0)
     i = abs(i);
@@ -51,8 +61,9 @@ if(i<0)
     w = w+pi;
 end
 
+theta1 = rad2deg(theta1); % [º]
 i = rad2deg(i); % [º]
-Omega = wrapTo360(rad2deg(Omega)); % [º]
-w = wrapTo360(rad2deg(w)); % [º]
+Omega = rad2deg(wrapTo2Pi(Omega)); % [º]
+w = rad2deg(wrapTo2Pi(w)); % [º]
 
 end
