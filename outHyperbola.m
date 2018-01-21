@@ -1,4 +1,4 @@
-function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s,e_s,i_s,Omega_s,omega_s, theta1)
+function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s,e_s,i_s,Omega_s,omega_s, theta1,v1,v_E,v_inf)
 %  function that gets orbital elements of the elliptic trajectory and
 %  obtains deltaV, the parking Orbit before exit and the hyperbolic
 %  trajectory
@@ -7,12 +7,6 @@ function [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t,a_s,e_s,i_s,Ome
 %  hyperbolaExit (struct) -> a, e i b
 %  parkingOrbit (struct) -> a,e,i,Omega,omega,theta,M
 %  deltaV necessary is in Ecliptic coordinate system
-
-
-t0=0;
-M0_s=359.7033431;
-
-
 
 %% DATA
 load('DATA.mat');
@@ -28,18 +22,9 @@ t0_e=0;
 
 %% Velocities
 
-% Earth vector
-[~,v_Tierra,~] = OrbitalVectors (t,earth.mu,a_e,e_e,I_e,RAAN_e,AP_e,M0_e,t0_e);
-
-% Spacecraft orbit
-[~,v_1,~] = OrbitalVectors (t,earth.mu,a_s,e_s,i_s,Omega_s,omega_s,M0_s,0);
-
-% Geocentric velocity
-Vinf=v_1-v_Tierra;
-
 % geocentric velocity in ECI
-Vinf_eci = rotx(-earth.epsilon)*Vinf';
-VTierra_eci = rotx(-earth.epsilon)*v_Tierra';
+Vinf_eci = rotx(-earth.epsilon)*v_inf';
+VTierra_eci = rotx(-earth.epsilon)*v_E';
 
 % normalized Vinf_eci
 vinf_eci = Vinf_eci/norm(Vinf_eci);
@@ -53,6 +38,7 @@ Vo = sqrt(earth.mu/ro); % velocity at parking orbit;
 deltaV = sqrt(norm(Vinf)^2+2*Vo)-Vo;
 
 %% hyperbolic path
+Vinf = norm(v_inf);
 hyperbolaExit.a = mu/(Vu^2);
 hyperbolaExit.e = 1 + (Vinf/Vo)^2;
 beta = acos(1/e);
@@ -83,6 +69,7 @@ r_eci_beta = rotx(-earth.epsilon)*r_ijk_beta';
 % Velocity at I
 v_eci_beta = cross(r_eci_beta,n_plano);
 v_eci_beta = Vo*v/norm(v_eci_beta);
-
+r_eci_beta
+v_eci_beta
 parkingOrbit = rToElementsECI(r_eci_beta,v_eci_beta,earth);
 end
