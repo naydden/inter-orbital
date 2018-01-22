@@ -33,11 +33,11 @@ mu = 1.3271741784e20;
 % h = 8000000;
 % ro = earth.R*1000 + h
 ro = 7500000;
-Vo = sqrt(earth.mu/ro) % velocity at parking orbit;
+Vo = sqrt(earth.mu/ro); % velocity at parking orbit;
 
 %% deltaV
-Vinf = norm(v_inf)
-deltaV = sqrt(Vinf^2+2*Vo)-Vo;
+Vinf = norm(v_inf);
+deltaV = sqrt(Vinf^2+2*Vo^2)-Vo;
 
 %% hyperbolic path
 hyperbolaExit.a = mu/(Vinf^2);
