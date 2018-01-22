@@ -42,22 +42,40 @@ T=sqrt(4*pi^2*a_O^3/mu)/(3600*24); %Period [days]
 
 % Distances, velocities and true anomalies
 [r1_E,v1_E,theta1_E] = OrbitalVectors (t1,mu,a_E,e_E,I_E,RAAN_E,AP_E,M0_E,t0);
-r1_E = r1_E/149597870700
+r1_E = r1_E/149597870700;
 [r2_M,v2_M,theta2_M] = OrbitalVectors (t2,mu,a_M,e_M,I_M,RAAN_M,AP_M,M0_M,t0);
-r2_M = r2_M/149597870700
+r2_M = r2_M/149597870700;
 
 %% Part 1: Heliocentric elliptic trajectory
-[a, e, theta1, w, i, Omega] = orbita_interplanetaria(r1_E,r2_M,deltat,T)
-E=acosd((e+cosd(theta1))/(1+e*cosd(theta1)));
-M=E-e*sin(E);
+[a_S, e_S, theta1, AP_S, I_S, RAAN_S] = orbita_interplanetaria(r1_E,r2_M,deltat,T);
+E_S=acosd((e_S+cosd(theta1))/(1+e_S*cosd(theta1)));
+M_S=E_S-e_S*sin(E_S);
 
-%% Part 2: Exit. Geocentric Parking orbit and hyperbolic trajectory and deltaV
-[r1,v1,theta1] = OrbitalVectors (t1,mu,a,e,I,RAAN,AP,M,t1)
-v_inf1=v1-v1_E;
-[hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t1,a,e,i,Omega,w,theta1,v1,v1_E,v_inf1)
-
-%% Part 3: Arrival. Geocentric hyperbolic trajectory and Parking orbit and deltaV
-[r2,v2,theta2] = OrbitalVectors (t2,mu,a,e,I,RAAN,AP,M,t1);
-v_inf2=v2-v2_M;
+% %% Part 2: Exit. Geocentric Parking orbit and hyperbolic trajectory and deltaV
+% [r1,v1,theta1] = OrbitalVectors (t1,mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
+% v_inf1=v1-v1_E;
+% [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t1,a_S,e_S,I_S,RAAN_S,AP_S,theta1,v1,v1_E,v_inf1);
+% 
+% %% Part 3: Arrival. Geocentric hyperbolic trajectory and Parking orbit and deltaV
+% [r2,v2,theta2] = OrbitalVectors (t2,mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
+% v_inf2=v2-v2_M;
 
 %% Part 4: Results Presentation
+
+a_S=a_S*149597870700;
+N=100;
+t=linspace(t1,t2,N);
+r_E=zeros(1,N,3);
+r_M=zeros(1,N,3);
+r_S=zeros(1,N,3);
+for i=1:N
+    [r_E(1,i,:),v1_E,theta1_E] = OrbitalVectors (t(i),mu,a_E,e_E,I_E,RAAN_E,AP_E,M0_E,t0);
+    [r_M(1,i,:),v1_M,theta1_M] = OrbitalVectors (t(i),mu,a_M,e_M,I_M,RAAN_M,AP_M,M0_M,t0);
+    [r_S(1,i,:),v1_S,theta1_S] = OrbitalVectors (t(i),mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
+end
+plot3(r_E(1,:,1),r_E(1,:,2),r_E(1,:,3));
+hold on
+plot3(r_M(1,:,1),r_M(1,:,2),r_M(1,:,3));
+hold on
+plot3(r_S(1,:,1),r_S(1,:,2),r_S(1,:,3));
+axis equal;
