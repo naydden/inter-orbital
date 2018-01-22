@@ -71,15 +71,5 @@ t2 = JulianDate(2031,7,6);
 % t2 = JulianDate(2022,4,20);
 
 deltat = t2-t1;
-lambda1 = atan(r1(2)/r1(1)); %  [rad]
-lambda1 = checkTangent(lambda1,r1(1),r1(2));
-lambda2 = atan(r2(2)/r2(1)); % [rad]
-lambda2 = checkTangent(lambda2,r2(1),r2(2));
-beta1 = asin(r1(3)/norm(r1)); % [rad]
-beta2 = asin(r2(3)/norm(r2)); % [rad]
-
-% Càlcul d'increment d'angles
-deltalambda = wrapTo2Pi(lambda2-lambda1); % [rad]
-deltatheta = acos(sin(beta1)*sin(beta2)+cos(beta1)*cos(beta2)*cos(deltalambda)); % [rad]
 
 [a, e, theta1, w, i, Omega] = orbita_interplanetaria(r1,r2,deltat)

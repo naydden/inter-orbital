@@ -1,4 +1,4 @@
-function [a, e, theta1, w, i, Omega] = orbita_interplanetaria(r1,r2,deltat)
+function [a, e, theta1, w, i, Omega] = orbita_interplanetariah(r1,r2,deltat)
 % a: semieix major [AU]
 % e: excentricitat
 % theta1: angle entre el punt Aries i la sonda (o planeta de sortida) [º]
@@ -25,8 +25,8 @@ deltatheta = acos(sin(beta1)*sin(beta2)+cos(beta1)*cos(beta2)*cos(deltalambda));
 % Resolució de les equacions
 syms e a theta1;
 eqn1 = (norm(r2)-norm(r1))/(norm(r1)*cos(theta1)-norm(r2)*cos(theta1+deltatheta))-e == 0;
-eqn2 = norm(r1)*(1+e*cos(theta1))/(1-e^2)-a == 0;
-eqn3 = 365.25*a^(3/2)*(2*atan(sqrt((1-e)/(1+e))*tan((theta1+deltatheta)/2))-e*sqrt(1-e^2)*sin(theta1+deltatheta)/(1+e*cos(theta1+deltatheta))-2*atan(sqrt((1-e)/(1+e))*tan(theta1/2))+e*sqrt(1-e^2)*sin(theta1)/(1+e*cos(theta1)))/(2*pi)-deltat == 0;
+eqn2 = norm(r1)*(1+e*cos(theta1))/(e^2-1)-a == 0;
+eqn3 = 365.25*a^(3/2)*(e*sqrt(e^2-1)*sin(theta1+deltatheta)/(1+e*cos(theta1+deltatheta))-log(((tan((theta1+deltatheta)/2)+sqrt((e+1)/(e-1)))/(tan((theta1+deltatheta)/2)-sqrt((e+1)/(e-1)))))-e*sqrt(e^2-1)*sin(theta1)/(1+e*cos(theta1))+log(((tan(theta1/2)+sqrt((e+1)/(e-1)))/(tan(theta1/2)-sqrt((e+1)/(e-1))))))/(2*pi)-deltat == 0;
 S = solve(eqn1,eqn2,eqn3);
 
 e = double(S.e); % excentricitat
