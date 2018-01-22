@@ -42,23 +42,17 @@ T=sqrt(4*pi^2*a_O^3/mu)/(3600*24); %Period [days]
 
 % Distances, velocities and true anomalies
 [r1_E,v1_E,theta1_E] = OrbitalVectors (t1,mu,a_E,e_E,I_E,RAAN_E,AP_E,M0_E,t0);
-r1_E = r1_E/149597870700
+r1_E = r1_E/149597870700;
 [r2_M,v2_M,theta2_M] = OrbitalVectors (t2,mu,a_M,e_M,I_M,RAAN_M,AP_M,M0_M,t0);
-r2_M = r2_M/149597870700
+r2_M = r2_M/149597870700;
 
 %% Part 1: Heliocentric elliptic trajectory
 [a, e, theta1, w, i, Omega] = orbita_interplanetaria(r1_E,r2_M,deltat,T)
-a = double(a);
-e = double(e);
-theta1 = double(theta1);
-w = double(w);
- i =
-
 E=acosd((e+cosd(theta1))/(1+e*cosd(theta1)));
 M=E-e*sin(E);
 
 %% Part 2: Exit. Geocentric Parking orbit and hyperbolic trajectory and deltaV
-[r1,v1,theta1] = OrbitalVectors (t1,mu,a,e,I,RAAN,AP,M,t1)
+[r1,v1,theta1] = OrbitalVectors (t1,mu,a,e,i,Omega,AP,M,t1)
 v_inf1=v1-v1_E;
 [hyperbolaExit, parkingOrbit, deltaV] = outHyperbola (t1,a,e,i,Omega,w,theta1,v1,v1_E,v_inf1)
 
