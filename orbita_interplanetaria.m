@@ -33,16 +33,8 @@ e = double(S.e); % excentricitat
 a = double(S.a); % semieix major
 theta1 = double(S.theta1); % posició inicial en l'òrbita [rad]
 
-if isreal(e)==0 || isreal(a)==0 || isreal(theta1)==0
-    syms e a theta1;
-    eqn1 = (norm(r2)-norm(r1))/(norm(r1)*cos(theta1)-norm(r2)*cos(theta1+deltatheta))-e == 0;
-    eqn2 = norm(r1)*(1+e*cos(theta1))/(e^2-1)-a == 0;
-    eqn3 = 365.25*a^(3/2)*(e*sqrt(e^2-1)*sin(theta1+deltatheta)/(1+e*cos(theta1+deltatheta))-log(abs((tan((theta1+deltatheta)/2)+sqrt((e+1)/(e-1)))/(tan((theta1+deltatheta)/2)-sqrt((e+1)/(e-1)))))-e*sqrt(e^2-1)*sin(theta1)/(1+e*cos(theta1))+log(abs((tan(theta1/2)+sqrt((e+1)/(e-1)))/(tan(theta1/2)-sqrt((e+1)/(e-1))))))/(2*pi)-deltat == 0;
-    S = solve(eqn1,eqn2,eqn3,'IgnoreAnalyticConstraints',true);
-    
-    e = double(S.e); % excentricitat
-    a = double(S.a); % semieix major
-    theta1 = double(S.theta1); % posició inicial en l'òrbita [rad]
+if isreal(e)==0 || isreal(a)==0 || isreal(theta1)==0 || e>1 || e<-1
+    [e,a,theta1] = hyperbolic_orbit(r1,r2,deltat,deltatheta);
 end
 
 % Correcció per si surt e negatiu
