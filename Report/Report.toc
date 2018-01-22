@@ -1,5 +1,5 @@
-\contentsline {chapter}{Llista de taules}{ii}{section*.1}
-\contentsline {chapter}{Llista de figures}{iii}{section*.2}
+\contentsline {chapter}{Llista de taules}{iii}{section*.1}
+\contentsline {chapter}{Llista de figures}{iv}{section*.2}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}\IeC {\`O}rbita el\IeC {\textperiodcentered }l\IeC {\'\i }ptica helioc\IeC {\`e}ntrica}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Plantejament d'equacions}{2}{section.2.1}
@@ -16,11 +16,14 @@
 \contentsline {chapter}{\numberline {6}Resultats}{8}{chapter.6}
 \contentsline {section}{\numberline {6.1}Cas de la Terra a Mart}{8}{section.6.1}
 \contentsline {section}{\numberline {6.2}Cas de Mart a J\IeC {\'u}piter}{8}{section.6.2}
-\contentsline {section}{\numberline {6.3}Cas 1 de Mart a J\IeC {\'u}piter}{8}{section.6.3}
-\contentsline {section}{\numberline {6.4}Cas 2 de la Terra a Mart}{9}{section.6.4}
-\contentsline {section}{\numberline {6.5}Cas 3 de la Terra a Mart}{9}{section.6.5}
-\contentsline {section}{\numberline {6.6}Cas 4 de la Terra a Mart}{9}{section.6.6}
-\contentsline {section}{\numberline {6.7}Cas 5 de la Terra a Venus}{10}{section.6.7}
-\contentsline {section}{\numberline {6.8}Cas 6 de Mart a la Terra}{10}{section.6.8}
-\contentsline {section}{\numberline {6.9}Cas 7 de Mart a la Terra}{10}{section.6.9}
-\contentsline {chapter}{\numberline {7}Conclusions}{12}{chapter.7}
+\contentsline {section}{\numberline {6.3}Cas de la Terra a Mart}{8}{section.6.3}
+\contentsline {section}{\numberline {6.4}Cas 1 de Mart a J\IeC {\'u}piter}{9}{section.6.4}
+\contentsline {section}{\numberline {6.5}Cas 2 de la Terra a Mart}{9}{section.6.5}
+\contentsline {section}{\numberline {6.6}Cas 3 de la Terra a Mart}{9}{section.6.6}
+\contentsline {section}{\numberline {6.7}Cas 4 de la Terra a Mart}{10}{section.6.7}
+\contentsline {section}{\numberline {6.8}Cas 5 de la Terra a Venus}{10}{section.6.8}
+\contentsline {section}{\numberline {6.9}Cas 6 de Mart a la Terra}{10}{section.6.9}
+\contentsline {section}{\numberline {6.10}Cas 7 de Mart a la Terra}{11}{section.6.10}
+\contentsline {section}{\numberline {6.11}Cas 8 de la Terra a Mart}{11}{section.6.11}
+\contentsline {section}{\numberline {6.12}Cas 9 de la Terra a Mart}{12}{section.6.12}
+\contentsline {chapter}{\numberline {7}Conclusions}{13}{chapter.7}

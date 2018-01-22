@@ -38,7 +38,6 @@ t0 = JulianDate(2000,1,1);
 t1 = JulianDate(2020,7,19);
 t2 = JulianDate(2021,1,25);
 deltat = t2-t1;
-T=sqrt(4*pi^2*a_O^3/mu)/(3600*24); %Period [days]
 
 % Distances, velocities and true anomalies
 [r1_E,v1_E,theta1_E] = OrbitalVectors (t1,mu,a_E,e_E,I_E,RAAN_E,AP_E,M0_E,t0);

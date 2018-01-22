@@ -1,8 +1,8 @@
-function angle = checkTangent(result,x,y)
-    if x<0 && y>0
+function angle = checkTangent(result,num,den)
+    if den<0 && num>0
         % segon quadrant
         angle = pi + result;
-    elseif  x<0 && y<0
+    elseif  den<0 && num<0
         % tercer quadrant
         angle = result + pi;
     else

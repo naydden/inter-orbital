@@ -15,7 +15,7 @@ while(resta>d)
     eant = e;
     
     if resta>d
-        theta = theta+(deltat-delta)/1000;
+        theta = theta+(deltat-delta)/10000;
     end
     
 end
