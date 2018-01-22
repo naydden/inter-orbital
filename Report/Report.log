@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.1)  21 JAN 2018 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.1)  22 JAN 2018 02:29
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -1975,7 +1975,7 @@ l.1 \chapter
 
 ]
 Cap\IeC {\'\i }tol 2.
-<./plots/esquema_orbi.png, id=183, 557.83406pt x 339.51843pt>
+<./plots/esquema_orbi.png, id=185, 557.83406pt x 339.51843pt>
 File: ./plots/esquema_orbi.png Graphic file (type png)
 
 <use ./plots/esquema_orbi.png>
@@ -2001,7 +2001,7 @@ Package pdftex.def Info: ./doc_config/image.png used on input line 14.
  [2
 
  <./plots/esquema_orbi.png>]
-<./plots/triangle.png, id=191, 789.70032pt x 401.24907pt>
+<./plots/triangle.png, id=193, 789.70032pt x 401.24907pt>
 File: ./plots/triangle.png Graphic file (type png)
 
 <use ./plots/triangle.png>
@@ -2093,42 +2093,58 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 55.
+less on input line 51.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 55.
+less on input line 51.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 55.
+less on input line 51.
 
 File: ./doc_config/image.png Graphic file (type png)
 <use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 55.
+Package pdftex.def Info: ./doc_config/image.png used on input line 51.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [8
 
 ]
 File: ./doc_config/image.png Graphic file (type png)
  <use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 93.
+Package pdftex.def Info: ./doc_config/image.png used on input line 97.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [9]
+Package epstopdf Info: Source file: <./plots/cas7.eps>
+(epstopdf)                    date: 2018-01-22 02:28:10
+(epstopdf)                    size: 38400 bytes
+(epstopdf)             Output file: <./plots/cas7-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-22 02:29:29
+(epstopdf)                    size: 8059 bytes
+(epstopdf)             Command: <epstopdf --outfile=./plots/cas7-eps-converted-
+to.pdf ./plots/cas7.eps>
+(epstopdf)             \includegraphics on input line 139.
+Package epstopdf Info: Output file is already uptodate.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<./plots/cas7-eps-converted-to.pdf, id=256, 421.575pt x 316.18124pt>
+File: ./plots/cas7-eps-converted-to.pdf Graphic file (type pdf)
 
-File: ./doc_config/image.png Graphic file (type png)
-<use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 151.
-(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [10]) (sections/7.conclusions.tex
+<use ./plots/cas7-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/cas7-eps-converted-to.pdf used on input line 1
+39.
+(pdftex.def)             Requested size: 400.49397pt x 300.37047pt.
+) (sections/7.conclusions.tex
 File: ./doc_config/image.png Graphic file (type png)
 
 <use ./doc_config/image.png>
 Package pdftex.def Info: ./doc_config/image.png used on input line 1.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [11]
+ [10]
+File: ./doc_config/image.png Graphic file (type png)
+ <use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 1.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [11 <./plots/cas7-eps-converted-to.pdf>]
 Cap\IeC {\'\i }tol 7.
 ) 
 AED: lastpage setting LastPage
@@ -2165,13 +2181,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 29758 strings out of 493334
- 548602 string characters out of 3143122
- 639184 words of memory out of 3000000
- 32715 multiletter control sequences out of 15000+200000
+ 29777 strings out of 493334
+ 548849 string characters out of 3143122
+ 640183 words of memory out of 3000000
+ 32719 multiletter control sequences out of 15000+200000
  65634 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,84p,10486b,840s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,16n,84p,10486b,838s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Apps/MiKTeX 2.9/font
 s/enc/dvips/lm/lm-mathit.enc}{C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.e
 nc}{C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Apps/MiKTeX 2.9/fonts/e
@@ -2184,9 +2200,9 @@ fb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Apps/MiKTeX 2.9/font
 s/type1/public/lm/lmssbo10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmssbx
 10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Apps/MiKTeX 2.9
 /fonts/type1/public/lm/lmsy8.pfb>
-Output written on Report.pdf (16 pages, 285328 bytes).
+Output written on Report.pdf (16 pages, 291904 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

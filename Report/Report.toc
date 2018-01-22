@@ -19,8 +19,8 @@
 \contentsline {section}{\numberline {6.3}Cas 1 de Mart a J\IeC {\'u}piter}{8}{section.6.3}
 \contentsline {section}{\numberline {6.4}Cas 2 de la Terra a Mart}{9}{section.6.4}
 \contentsline {section}{\numberline {6.5}Cas 3 de la Terra a Mart}{9}{section.6.5}
-\contentsline {section}{\numberline {6.6}Cas 4 de la Terra a Mart}{10}{section.6.6}
+\contentsline {section}{\numberline {6.6}Cas 4 de la Terra a Mart}{9}{section.6.6}
 \contentsline {section}{\numberline {6.7}Cas 5 de la Terra a Venus}{10}{section.6.7}
 \contentsline {section}{\numberline {6.8}Cas 6 de Mart a la Terra}{10}{section.6.8}
-\contentsline {section}{\numberline {6.9}Cas 7 de Mart a la Terra}{11}{section.6.9}
+\contentsline {section}{\numberline {6.9}Cas 7 de Mart a la Terra}{10}{section.6.9}
 \contentsline {chapter}{\numberline {7}Conclusions}{12}{chapter.7}

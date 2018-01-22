@@ -47,7 +47,7 @@ r1_E = r1_E/149597870700;
 r2_M = r2_M/149597870700;
 
 %% Part 1: Heliocentric elliptic trajectory
-[a_S, e_S, theta1, AP_S, I_S, RAAN_S] = orbita_interplanetaria(r1_E,r2_M,deltat,T);
+[a_S, e_S, theta1, AP_S, I_S, RAAN_S] = orbita_interplanetaria(r1_E,r2_M,deltat);
 E_S=acosd((e_S+cosd(theta1))/(1+e_S*cosd(theta1)));
 M_S=E_S-e_S*sin(E_S);
 
