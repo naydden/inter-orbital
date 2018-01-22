@@ -64,14 +64,17 @@ M_S=E_S-e_S*sin(E_S);
 
 a_S=a_S*149597870700;
 N=100;
-t=linspace(t1,t2,N);
-r_E=zeros(1,N,3);
-r_M=zeros(1,N,3);
+A=1;
+t=linspace(t1-A*deltat,t2+A*deltat,(2*A+1)*N);
+r_E=zeros(1,(2*A+1)*N,3);
+r_M=zeros(1,(2*A+1)*N,3);
 r_S=zeros(1,N,3);
-for i=1:N
+for i=1:(2*A+1)*N
     [r_E(1,i,:),v1_E,theta1_E] = OrbitalVectors (t(i),mu,a_E,e_E,I_E,RAAN_E,AP_E,M0_E,t0);
     [r_M(1,i,:),v1_M,theta1_M] = OrbitalVectors (t(i),mu,a_M,e_M,I_M,RAAN_M,AP_M,M0_M,t0);
-    [r_S(1,i,:),v1_S,theta1_S] = OrbitalVectors (t(i),mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
+    if t(i)>=t1 && t(i)<=t2
+        [r_S(1,i-A*N,:),v1_S,theta1_S] = OrbitalVectors (t(i),mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
+    end
 end
 plot3(r_E(1,:,1),r_E(1,:,2),r_E(1,:,3));
 hold on
