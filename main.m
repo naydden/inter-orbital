@@ -50,20 +50,19 @@ r2_M = r2_M/dST;
 [a_S, e_S, theta1, AP_S, I_S, RAAN_S] = orbita_interplanetaria(r1_E,r2_M,deltat);
 E_S=acosd((e_S+cosd(theta1))/(1+e_S*cosd(theta1)));
 M_S=E_S-e_S*sin(E_S);
+a_S = a_S*dST;
 
 %% Part 2: Exit. Geocentric Parking orbit and hyperbolic trajectory and deltaV
-a_S = a_S*dST;
 [r1,v1,theta1] = OrbitalVectors (t1,mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
 v_inf1=v1-v1_E;
-[hyperbolaExit, deltaV] = outHyperbola (t1,a_S,e_S,I_S,RAAN_S,AP_S,theta1,v1,v1_E,v_inf1)
+[hyperbolaExit, deltaV] = outHyperbola (t1,a_S,e_S,I_S,RAAN_S,AP_S,theta1,v1,v1_E,v_inf1);
 
 %% Part 3: Arrival. Geocentric hyperbolic trajectory and Parking orbit and deltaV
-% [r2,v2,theta2] = OrbitalVectors (t2,mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
-% v_inf2=v2-v2_M;
+[r2,v2,theta2] = OrbitalVectors (t2,mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
+v_inf2=v2-v2_M;
 
 %% Part 4: Results Presentation
 
-a_S=a_S*149597870700;
 N=100;
 A=2;
 t=linspace(t1-A*deltat,t2+A*deltat,(2*A+1)*N);
