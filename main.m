@@ -76,13 +76,13 @@ for i=1:(2*A+1)*N
         [r_S(1,i-A*N,:),v1_S,theta1_S] = OrbitalVectors (t(i),mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
     end
 end
-plot3(r_E(1,:,1),r_E(1,:,2),r_E(1,:,3),':r');
+plot3(r_E(1,:,1),r_E(1,:,2),r_E(1,:,3),':b');
 hold on
-plot3(r_E(1,A*N:(A+1)*N,1),r_E(1,A*N:(A+1)*N,2),r_E(1,A*N:(A+1)*N,3),'-r','LineWidth',2);
+plot3(r_E(1,A*N:(A+1)*N,1),r_E(1,A*N:(A+1)*N,2),r_E(1,A*N:(A+1)*N,3),'-b','LineWidth',2);
 hold on
-plot3(r_M(1,:,1),r_M(1,:,2),r_M(1,:,3),':b');
+plot3(r_M(1,:,1),r_M(1,:,2),r_M(1,:,3),':r');
 hold on
-plot3(r_M(1,A*N:(A+1)*N,1),r_M(1,A*N:(A+1)*N,2),r_M(1,A*N:(A+1)*N,3),'-b','LineWidth',2);
+plot3(r_M(1,A*N:(A+1)*N,1),r_M(1,A*N:(A+1)*N,2),r_M(1,A*N:(A+1)*N,3),'-r','LineWidth',2);
 hold on
 plot3(r_S(1,:,1),r_S(1,:,2),r_S(1,:,3),'-g','LineWidth',2);
 axis equal;
