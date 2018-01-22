@@ -10,11 +10,11 @@
 % t1 = JulianDate(2026,6,5);
 % t2 = JulianDate(2029,4,25);
 % 
-% % Cas de la Terra a Mart (hiperbòlic)
-% r1 = [-0.9609 0.2466 0];
-% r2 = [0.7285 -1.1980 -0.0430];
-% t1 = JulianDate(2020,3,6);
-% t2 = JulianDate(2020,6,9);
+% Cas de la Terra a Mart (hiperbòlic)
+r1 = [-0.9609 0.2466 0];
+r2 = [0.7285 -1.1980 -0.0430];
+t1 = JulianDate(2020,3,6);
+t2 = JulianDate(2020,6,9);
 % 
 % % Cas 1 de Mart a Júpiter
 % r1 = [1.0707 0.9868 -0.0055];
@@ -52,11 +52,11 @@
 % t1 = JulianDate(2033,1,18);
 % t2 = JulianDate(2033,8,28);
 % 
-% Cas 7 de Mart a la Terra
-r1 = [-1.4166 0.8722 0.0530];
-r2 = [0.2345 -0.9893 -0.0001];
-t1 = JulianDate(2030,11,20);
-t2 = JulianDate(2031,7,6);
+% % Cas 7 de Mart a la Terra
+% r1 = [-1.4166 0.8722 0.0530];
+% r2 = [0.2345 -0.9893 -0.0001];
+% t1 = JulianDate(2030,11,20);
+% t2 = JulianDate(2031,7,6);
 % 
 % % Cas 8 de la Terra a Mart (hiperbòlica)
 % r1 = [0.4383 0.8843 0];

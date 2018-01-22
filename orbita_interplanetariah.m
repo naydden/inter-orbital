@@ -26,8 +26,8 @@ deltatheta = acos(sin(beta1)*sin(beta2)+cos(beta1)*cos(beta2)*cos(deltalambda));
 syms e a theta1;
 eqn1 = (norm(r2)-norm(r1))/(norm(r1)*cos(theta1)-norm(r2)*cos(theta1+deltatheta))-e == 0;
 eqn2 = norm(r1)*(1+e*cos(theta1))/(e^2-1)-a == 0;
-eqn3 = 365.25*a^(3/2)*(e*sqrt(e^2-1)*sin(theta1+deltatheta)/(1+e*cos(theta1+deltatheta))-log(((tan((theta1+deltatheta)/2)+sqrt((e+1)/(e-1)))/(tan((theta1+deltatheta)/2)-sqrt((e+1)/(e-1)))))-e*sqrt(e^2-1)*sin(theta1)/(1+e*cos(theta1))+log(((tan(theta1/2)+sqrt((e+1)/(e-1)))/(tan(theta1/2)-sqrt((e+1)/(e-1))))))/(2*pi)-deltat == 0;
-S = solve(eqn1,eqn2,eqn3);
+eqn3 = 365.25*a^(3/2)*(e*sqrt(e^2-1)*sin(theta1+deltatheta)/(1+e*cos(theta1+deltatheta))-log(abs((tan((theta1+deltatheta)/2)+sqrt((e+1)/(e-1)))/(tan((theta1+deltatheta)/2)-sqrt((e+1)/(e-1)))))-e*sqrt(e^2-1)*sin(theta1)/(1+e*cos(theta1))+log(abs((tan(theta1/2)+sqrt((e+1)/(e-1)))/(tan(theta1/2)-sqrt((e+1)/(e-1))))))/(2*pi)-deltat == 0;
+S = solve(eqn1,eqn2,eqn3,'Real',true);
 
 e = double(S.e); % excentricitat
 a = double(S.a); % semieix major
@@ -45,6 +45,9 @@ A = asin(cos(beta2)*sin(deltalambda)/sin(deltatheta)); % [rad]
 i = acos(sin(A)*cos(beta1)); % [rad]
 if i>pi/2
     i = i-pi;
+end
+if beta1<0 && i>0
+    i = -i;
 end
 l = asin(tan(beta1)/tan(i)); % [rad]
 if beta1<0 && l>0
