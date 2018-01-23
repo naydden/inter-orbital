@@ -1,9 +1,9 @@
 \chapter{Codi}
+\label{code}
 Per tal de poder resoldre les equacions definides en els apartats anteriors de forma ràpida i eficient, s'ha elaborat un codi \textit{MATLAB}. A fi de simplificar el seu ús i la seva comprensió, el codi està dividit en diferentes funcions amb una tasca definida i clara. Aquestes es detallen a continuació.
 \section[Programa principal]{Programa principal \textit{main.m}}
 \lstinputlisting[language=Matlab]{../../main.m}
 \section[Transfer Orbit]{Transfer Orbit \textit{orbitainterplanetaria.m}}
-\label{TransferOrbit}
 Funció que calcula els elements orbitals de l'òrbita de transferència. En cas que sigui el·líptica, els resultats s'obtenen gràcies a la funció \textit{solve.m}. En canvi, si és hiperbòlica cal emprar una altra funció desenvolupada a continuació.
 \lstinputlisting[language=Matlab]{../../orbita_interplanetaria.m}
 \subsection[Hyperbolic transfer orbit]{Hyperbolic transfer orbit \textit{hyperbolicorbit.m}}
