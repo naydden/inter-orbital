@@ -16,7 +16,14 @@ En aquest cas, ja que ens trobem dins del Sistema Solar, $R$ és la distància d
 Així, en un viatge interplanetari, inicialment la sonda es troba dins de l'esfera d'influència del planeta de sortida. Un cop surt d'aquesta, està només sota la influència del Sol. I en arribar al planeta de destí, està dins de la seva EdI. El mètode es basa en tenir sempre un problema de dos cossos, variant el cos central segons l'EdI, bé sigui un dels planetes o bé el Sol. D'aquesta forma es simplifica molt el problema. Per aquest motiu la \textit{PCA} va molt bé per càlculs inicials, tot i que s'hauran de refinar numèricament a posteriori si es volen resultats més precisos.
 
 \section{Viatges interplanetaris}
-Com s'ha resumit a l'apartat anterior, en el càlcul de la trajectòria interplanetària que segueix la sonda, es suposa sempre que es troba sota la influència d'un sol cos, ja sigui un planeta o el Sol. Tanmateix, la seva trajectòria serà diferent en funció de sota la influència de quin cos es trobi.
+Com s'ha resumit a l'apartat anterior, en el càlcul de la trajectòria interplanetària que segueix la sonda, es suposa sempre que es troba sota la influència d'un sol cos, ja sigui un planeta o el Sol. Tanmateix, la seva trajectòria serà diferent en funció de sota la influència de quin cos es trobi, com es pot veure a la Figura \ref{patchedconics}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{./plots/patchedconics}
+	\caption{Trajectòria interplatenària d'una nau utilitzant el mètode \textit{Patched Conics Approximation}}
+	\label{patchedconics}
+\end{figure}
 
 Per tant, la trajectòria que seguirà el planeta es divideix en les següents fases:
 \begin{enumerate}
