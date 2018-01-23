@@ -7,25 +7,27 @@
 \contentsline {subsection}{\numberline {2.1.2}Traject\IeC {\`o}ria hiperb\IeC {\`o}lica}{4}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}M\IeC {\`e}tode de resoluci\IeC {\'o}}{5}{section.2.2}
 \contentsline {chapter}{\numberline {3}Sortida del planeta origen}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{6}{section.3.1}
-\contentsline {section}{\numberline {3.2}\IeC {\`O}rbita d'aparcament}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}DeltaV}{6}{section.3.3}
-\contentsline {chapter}{\numberline {4}Arribada al planeta dest\IeC {\'\i }}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{7}{section.4.1}
-\contentsline {section}{\numberline {4.2}\IeC {\`O}rbita d'aparcament}{7}{section.4.2}
-\contentsline {section}{\numberline {4.3}DeltaV}{7}{section.4.3}
-\contentsline {chapter}{\numberline {5}Funcions auxiliars}{8}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultats}{9}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cas de la Terra a Mart}{9}{section.6.1}
-\contentsline {section}{\numberline {6.2}Cas de Mart a J\IeC {\'u}piter}{10}{section.6.2}
-\contentsline {section}{\numberline {6.3}Cas de la Terra a Mart}{10}{section.6.3}
-\contentsline {section}{\numberline {6.4}Cas 1 de Mart a J\IeC {\'u}piter}{11}{section.6.4}
-\contentsline {section}{\numberline {6.5}Cas 2 de la Terra a Mart}{11}{section.6.5}
-\contentsline {section}{\numberline {6.6}Cas 3 de la Terra a Mart}{12}{section.6.6}
-\contentsline {section}{\numberline {6.7}Cas 4 de la Terra a Mart}{13}{section.6.7}
-\contentsline {section}{\numberline {6.8}Cas 5 de la Terra a Venus}{13}{section.6.8}
-\contentsline {section}{\numberline {6.9}Cas 6 de Mart a la Terra}{14}{section.6.9}
-\contentsline {section}{\numberline {6.10}Cas 7 de Mart a la Terra}{14}{section.6.10}
-\contentsline {section}{\numberline {6.11}Cas 8 de la Terra a Mart}{15}{section.6.11}
-\contentsline {section}{\numberline {6.12}Cas 9 de la Terra a Mart}{16}{section.6.12}
-\contentsline {chapter}{\numberline {7}Conclusions}{18}{chapter.7}
+\contentsline {section}{\numberline {3.1}Velocitats a la sortida}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}DeltaV}{7}{section.3.3}
+\contentsline {chapter}{\numberline {4}Codi}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}Main}{8}{section.4.1}
+\contentsline {section}{\numberline {4.2}outHyperbola}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}OrbitalVectors}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}JulianDate}{12}{section.4.4}
+\contentsline {section}{\numberline {4.5}checkTangent}{13}{section.4.5}
+\contentsline {chapter}{\numberline {5}Resultats}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}Cas de la Terra a Mart}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}Cas de Mart a J\IeC {\'u}piter}{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}Cas de la Terra a Mart}{15}{section.5.3}
+\contentsline {section}{\numberline {5.4}Cas 1 de Mart a J\IeC {\'u}piter}{16}{section.5.4}
+\contentsline {section}{\numberline {5.5}Cas 2 de la Terra a Mart}{16}{section.5.5}
+\contentsline {section}{\numberline {5.6}Cas 3 de la Terra a Mart}{17}{section.5.6}
+\contentsline {section}{\numberline {5.7}Cas 4 de la Terra a Mart}{18}{section.5.7}
+\contentsline {section}{\numberline {5.8}Cas 5 de la Terra a Venus}{18}{section.5.8}
+\contentsline {section}{\numberline {5.9}Cas 6 de Mart a la Terra}{19}{section.5.9}
+\contentsline {section}{\numberline {5.10}Cas 7 de Mart a la Terra}{19}{section.5.10}
+\contentsline {section}{\numberline {5.11}Cas 8 de la Terra a Mart}{20}{section.5.11}
+\contentsline {section}{\numberline {5.12}Cas 9 de la Terra a Mart}{21}{section.5.12}
+\contentsline {chapter}{\numberline {6}Conclusions}{23}{chapter.6}
+\contentsline {chapter}{\numberline {7}Bibliografia}{24}{chapter.7}

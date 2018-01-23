@@ -1,3 +1,12 @@
 \chapter{Introducció}
 
-miau miau miaaauu
+El problema a resoldre escollit consisteix en trobar un $\Delta V$ inicial que porti la nau d'un planeta a un altre, donats els instants de sortida $t_1$ i d'arribada $t_2$.
+
+Per fer això, primer s'han de trobar els elements orbitals eclíptics de l'òrbita de transferència així com les velocitats heliocèntriques de sortida i d'arribada de la respectiva sonda. A partir d'aquestes es podrà obtenir també el $\Delta V$ i determinar així la viabilitat del viatge.
+
+La metodologia matemàtica consistirà en el mètode del \textit{Patched Conics} \cite{Calaf2017d}. Segons aquest, la trajectòria es divideix per zones d'influència. Així, inicialment la sonda estarà dins de l'esfera d'influència del planeta de sortida. Un cop surti d'aquesta, estarà dins de l'esfera d'influència (EdI) del Sol. I a l'arribar al planeta de destí estarà dins de la seva EdI. El mètode es basa en el supòsit de que sempre s'aplica el problema dels dos cosos, variant el cos central segons l'EdI, bé sigui un dels planetes o bé sigui el Sol. Això fa simplificar força el problema. És per aquest motiu que va molt bé per càlculs inicials, que s'hauran de refinar numèricament a posteriori.
+
+Així doncs, es tracta d'un projecte complex que toca gran part del contingut donat a la part de mecànica orbital de l'assignatura \textit{Aerodinàmica, Mecànica de Vol i Mecànica Orbital} del màster d'Enginyeria Aeronàutica de l'UPC. Per aquest motiu, ha despertat l'interès de l'equip i ha sigut l'escollit.
+
+
+

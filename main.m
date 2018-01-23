@@ -13,9 +13,9 @@ clear
 clc
 
 %% Data
-load('DATA.mat');
 mu = 1.3271741784e20;
 dST = 149597870700;
+
 %Earth data
 a_E = 149598023000;
 e_E = 0.0167086;
@@ -32,6 +32,14 @@ I_M = 1.850;
 RAAN_M = 49.558;
 AP_M = 286.502;
 M0_M = 19.3564;
+
+%Jupiter data
+a_J = 7.7830e+11;
+e_J = 0.048498;
+I_J = 1.3033;
+RAAN_J = 100.46;
+AP_J = 273.866;
+M0_J = 20.021;
 
 % Time data
 t0 = JulianDate(2000,1,1);
@@ -54,7 +62,7 @@ a_S = a_S*dST;
 %% Part 2: Exit. Geocentric Parking orbit and hyperbolic trajectory and deltaV
 [r1,v1,theta1] = OrbitalVectors (t1,mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);
 v_inf1=v1-v1_E;
-[hyperbolaExit, deltaV] = outHyperbola (t1,a_S,e_S,I_S,RAAN_S,AP_S,theta1,v1,v1_E,v_inf1);
+[hyperbolaExit, deltaV] = outHyperbola (v_inf1);
 
 %% Part 3: Arrival. Geocentric hyperbolic trajectory and Parking orbit and deltaV
 [r2,v2,theta2] = OrbitalVectors (t2,mu,a_S,e_S,I_S,RAAN_S,AP_S,M_S,t1);

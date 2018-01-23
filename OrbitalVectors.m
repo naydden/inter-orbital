@@ -8,10 +8,10 @@ function [r,v,theta] = OrbitalVectors (t,mu,a,e,I,RAAN,AP,M0,t0)
 %    [N*m^2/kg^2]
 %a: Major semiaxis [m]
 %e: Excentricity [dimensionless]
-%I: Inclination [º]
-%RAAN: Right ascension of the ascending node [º]
-%AP: Argument of the perigee [º]
-%M0: Mean anomaly at a reference time [º]
+%I: Inclination [deg]
+%RAAN: Right ascension of the ascending node [deg]
+%AP: Argument of the perigee [deg]
+%M0: Mean anomaly at a reference time [deg]
 %t0: Reference time in JD [days]
 %
 %Outputs
@@ -19,7 +19,7 @@ function [r,v,theta] = OrbitalVectors (t,mu,a,e,I,RAAN,AP,M0,t0)
 %   reference as the orbital parameters [m]
 %r: Vector for the velocity of the orbiting object in the same system of
 %   reference as the orbital parameters [m/s]
-%theta: True anomaly [º]
+%theta: True anomaly [deg]
 
 I=deg2rad(I); %Inclination in rad
 RAAN=deg2rad(RAAN); %Right ascension of the ascending node in rad

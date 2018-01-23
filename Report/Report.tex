@@ -1,5 +1,6 @@
 \input{doc_config/doc_config} % Document Configurations
-
+\usepackage{listings}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
 \input{doc_config/doc_info} % Document information
 
 \input{doc_config/headers_and_footers} % Headers and footers
@@ -42,7 +43,6 @@
 \renewcommand{\cftfignumwidth}{4em}
 \listoffigures
 
-
 % DOCUMENT SECTIONS
 
 \newpage
@@ -54,7 +54,7 @@
 \import{sections/}{1.intro}
 \import{sections/}{2.eliptica}
 \import{sections/}{3.sortida}
-\import{sections/}{4.arribada}
+% \import{sections/}{4.arribada}
 \import{sections/}{5.auxiliaryFunctions}
 \import{sections/}{6.resultats}
 \import{sections/}{7.conclusions}
@@ -71,7 +71,8 @@
 %	siam    : [#] Initial. Surname (sc)
 %	unsrt   : [#] Name Surname
 
-%\bibliographystyle{plain}
-%\bibliography{glider}
+\bibliographystyle{acm}
+\nocite{*}
+\bibliography{bib}
 
 \end{document}

@@ -1,1 +1,19 @@
-\chapter{Funcions auxiliars}
+\chapter{Codi}
+Com s'ha anat comentant, el codi està dividit en funcions amb una tasca definida i clara. A continuació s'expliquen els codis emprats com a funcions auxiliars pels altres codis ja vists.
+\section{Main}
+\lstinputlisting[language=Matlab]{../../main.m}
+% \section{Transfer Orbit}
+% \lstinputlisting[language=Matlab]{../../orbita_interplanetaria.m}
+% \lstinputlisting[language=Matlab]{../../hyperbolic_orbit.m}
+\section{outHyperbola}
+\label{outHyperbola}
+\lstinputlisting[language=Matlab]{../../outHyperbola.m}
+\section{OrbitalVectors}
+\label{OrbitalVectors}
+\lstinputlisting[language=Matlab]{../../OrbitalVectors.m}
+\section{JulianDate}
+S'aplica l'algoritme de conversió vist a clase. \cite[pàg.48]{Calaf2017a}
+\lstinputlisting[language=Matlab]{../../JulianDate.m}
+\section{checkTangent}
+Aquesta funció simplement s'encarrega de rebre un quocient, i segons el signe, decidir en quin quadrant situar l'angle que surt de fer l'arc tangent.
+\lstinputlisting[language=Matlab]{../../checkTangent.m}
