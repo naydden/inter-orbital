@@ -364,6 +364,7 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT /home/bobz/repos/inter-orbital/Report/Report.toc
 INPUT /home/bobz/repos/inter-orbital/Report/Report.toc
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf/tex/latex/lm/ts1lmss.fd
 INPUT /usr/share/texmf/tex/latex/lm/ts1lmss.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ts1-lmssbx10.tfm
@@ -386,7 +387,17 @@ INPUT /home/bobz/repos/inter-orbital/Report/./doc_config/image.png
 INPUT ./doc_config/image.png
 INPUT /home/bobz/repos/inter-orbital/Report/sections/1.intro.tex
 INPUT /home/bobz/repos/inter-orbital/Report/sections/1.intro.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso10.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbo10.tfm
+INPUT /home/bobz/repos/inter-orbital/Report/./doc_config/image.png
+INPUT ./doc_config/image.png
+INPUT /home/bobz/repos/inter-orbital/Report/./plots/patchedconics.jpg
+INPUT ./plots/patchedconics.jpg
+INPUT ./plots/patchedconics.jpg
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss9.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso9.tfm
+INPUT /home/bobz/repos/inter-orbital/Report/./doc_config/image.png
+INPUT ./doc_config/image.png
 INPUT /home/bobz/repos/inter-orbital/Report/sections/2.eliptica.tex
 INPUT /home/bobz/repos/inter-orbital/Report/sections/2.eliptica.tex
 INPUT /home/bobz/repos/inter-orbital/Report/./doc_config/image.png
@@ -395,8 +406,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ts1-lmssbx10.tfm
 INPUT /home/bobz/repos/inter-orbital/Report/./plots/esquema_orbi.png
 INPUT ./plots/esquema_orbi.png
 INPUT ./plots/esquema_orbi.png
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss9.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss12.tfm
 INPUT /home/bobz/repos/inter-orbital/Report/./doc_config/image.png
 INPUT ./doc_config/image.png
 INPUT /home/bobz/repos/inter-orbital/Report/./plots/triangle.png
@@ -423,7 +432,6 @@ INPUT /home/bobz/repos/inter-orbital/Report/sections/5.auxiliaryFunctions.tex
 INPUT /home/bobz/repos/inter-orbital/Report/sections/5.auxiliaryFunctions.tex
 INPUT /home/bobz/repos/inter-orbital/Report/./doc_config/image.png
 INPUT ./doc_config/image.png
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbo10.tfm
 INPUT /home/bobz/repos/inter-orbital/Report/sections/../../main.m
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -620,8 +628,8 @@ INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
@@ -636,6 +644,7 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmss9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
