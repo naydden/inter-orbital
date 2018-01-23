@@ -13,10 +13,10 @@
 \contentsline {chapter}{\numberline {4}Codi}{9}{chapter.4}
 \contentsline {section}{\numberline {4.1}Programa principal}{9}{section.4.1}
 \contentsline {section}{\numberline {4.2}Transfer Orbit}{11}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Hyperbolic transfer orbit}{13}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Hyperbolic transfer orbit}{14}{subsection.4.2.1}
 \contentsline {section}{\numberline {4.3}Hip\IeC {\`e}rbola de sortida}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Posici\IeC {\'o} i velocitat}{15}{section.4.4}
-\contentsline {section}{\numberline {4.5}Data Juliana}{17}{section.4.5}
+\contentsline {section}{\numberline {4.4}Posici\IeC {\'o} i velocitat}{16}{section.4.4}
+\contentsline {section}{\numberline {4.5}Data Juliana}{18}{section.4.5}
 \contentsline {section}{\numberline {4.6}Correcci\IeC {\'o} d'angles}{18}{section.4.6}
 \contentsline {chapter}{\numberline {5}Resultats}{19}{chapter.5}
 \contentsline {section}{\numberline {5.1}Cas de la Terra a Mart}{20}{section.5.1}

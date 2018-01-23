@@ -4,15 +4,18 @@ Per tal de poder resoldre les equacions definides en els apartats anteriors de f
 \section[Programa principal]{Programa principal \textit{main.m}}
 \lstinputlisting[language=Matlab]{../../main.m}
 \section[Transfer Orbit]{Transfer Orbit \textit{orbitainterplanetaria.m}}
+\label{interplanetari}
 Funció que calcula els elements orbitals de l'òrbita de transferència. En cas que sigui el·líptica, els resultats s'obtenen gràcies a la funció \textit{solve.m}. En canvi, si és hiperbòlica cal emprar una altra funció desenvolupada a continuació.
+\newpage 
 \lstinputlisting[language=Matlab]{../../orbita_interplanetaria.m}
 \subsection[Hyperbolic transfer orbit]{Hyperbolic transfer orbit \textit{hyperbolicorbit.m}}
-Funció que implementa un mètode iteratiu per tal de calcular els elements orbitals d'una òrbita de transferència el·líptica. Cal destacar la importància d'escollir un valor inicial d'iteració adequat, ja que sinó no s'obtenen resultats correctes.
+Funció que implementa un mètode iteratiu per tal de calcular els elements orbitals d'una òrbita de transferència hiperbòlica. Cal destacar la importància d'escollir un valor inicial d'iteració adequat, ja que sinó no s'obtenen resultats correctes.
 \lstinputlisting[language=Matlab]{../../hyperbolic_orbit.m}
 \section[Hipèrbola de sortida]{Hipèrbola de sortida \textit{outHyperbola.m}}
 \label{outHyperbola}
 Funció que calcula els paràmetres de la hipèrbola de sortida, així com el $\Delta V$ que se li ha d'aplicar a la nau.
 \lstinputlisting[language=Matlab]{../../outHyperbola.m}
+\newpage
 \section[Posició i velocitat]{Posició i velocitat \textit{OrbitalVectors.m}}
 \label{OrbitalVectors}
 Càlcul dels vectors de posició i velocitat en funció dels elements orbitals.

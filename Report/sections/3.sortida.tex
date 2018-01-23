@@ -1,5 +1,5 @@
 \chapter{Sortida del planeta origen}
-Un cop es disposa dels elements keplerians eclíptics de l'òrbita de transferència, és possible trobar tant la trajectòria hiperbòlica que la sonda haurà de prosseguir des de la seva òrbita d'aparcament fins la sortida de l'EdI, com el $\Delta V$ que se li haurà d'aplicar per a que sigui capaç se sortir de l'òrbita d'aparcament i arribar al planeta en el temps marcat.
+Un cop es disposa dels elements keplerians eclíptics de l'òrbita de transferència, és possible trobar tant la trajectòria hiperbòlica que la sonda haurà de prosseguir des de la seva òrbita d'aparcament fins la sortida de l'EdI, com el $\Delta V$ que se li haurà d'aplicar per a que sigui capaç de sortir de l'òrbita d'aparcament i arribar al planeta en el temps marcat.
 
 \begin{figure}[H]
 	\centering
@@ -13,7 +13,7 @@ Per tal de determinar la hipèrbola de sortida, el primer pas és trobar les vel
 \begin{equation}
 \vec{V}_{\infty} = \vec{V}_{1} - \vec{V}_{P0}
 \end{equation}
-Per tal d'obtenir tant $\vec{V}_{1}$ com $\vec{V}_{P0}$ de manera senzilla i genèrica, s'ha elaborat una funció de MATLAB, que a partir d'els elements orbitals i de l'anomalia mitjana que tenia un cos en òrbita en un temps de referència, calcula la posició i la velocitat d'el cos en un instant determinat de temps \ref{OrbitalVectors}.
+Per tal d'obtenir tant $\vec{V}_{1}$ com $\vec{V}_{P0}$ de manera senzilla i genèrica, s'ha elaborat una funció de MATLAB, que a partir dels elements orbitals i de l'anomalia mitjana que tenia un cos en òrbita en un temps de referència, calcula la posició i la velocitat d'el cos en un instant determinat de temps. El codi d'aquesta es pot veure a la Secció \ref{OrbitalVectors}.
 
 D'aquesta manera, s'utilitzen els elements orbitals del planeta d'origen en J2000 per a obtenir la seva posició i velocitat en l'instant $t_1$, i s'utilitzen els elements orbitals i l'anomalia mitjana de l'òrbita interplanetària, calculats en la secció anterior, fent servir com a temps de referència el propi instant $t_1$.
 
