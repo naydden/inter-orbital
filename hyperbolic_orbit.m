@@ -2,7 +2,10 @@ function [e,a,theta] = hyperbolic_orbit(r1,r2,deltat,deltatheta)
 
 resta = 1000;
 d = 1e-6;
-theta = deg2rad(-60); % valor inicial que es dóna a theta
+theta = pi/2-acos(dot(r1,r2)/(norm(r1)*norm(r2))); % valor inicial que es dóna a theta
+if theta>deg2rad(-50)
+    theta = theta-deg2rad(10);
+end
 eant = 1000;
 
 while(resta>d)

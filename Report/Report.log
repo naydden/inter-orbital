@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.1)  22 JAN 2018 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.1)  23 JAN 2018 01:37
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -2114,12 +2114,10 @@ File: ./doc_config/image.png Graphic file (type png)
 Package pdftex.def Info: ./doc_config/image.png used on input line 104.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [9]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: ./doc_config/image.png Graphic file (type png)
+
 <use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 153.
+Package pdftex.def Info: ./doc_config/image.png used on input line 155.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [10]
 Package epstopdf Info: Source file: <./plots/cas7.eps>
@@ -2130,7 +2128,7 @@ Package epstopdf Info: Source file: <./plots/cas7.eps>
 (epstopdf)                    size: 8059 bytes
 (epstopdf)             Command: <epstopdf --outfile=./plots/cas7-eps-converted-
 to.pdf ./plots/cas7.eps>
-(epstopdf)             \includegraphics on input line 166.
+(epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 
 <./plots/cas7-eps-converted-to.pdf, id=285, 421.575pt x 316.18124pt>
@@ -2138,11 +2136,11 @@ File: ./plots/cas7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/cas7-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/cas7-eps-converted-to.pdf used on input line 1
-66.
+74.
 (pdftex.def)             Requested size: 400.49397pt x 300.37047pt.
 File: ./doc_config/image.png Graphic file (type png)
  <use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 183.
+Package pdftex.def Info: ./doc_config/image.png used on input line 181.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [11 <./plots/cas7-eps-converted-to.pdf>]) (sections/7.conclusions.tex
 File: ./doc_config/image.png Graphic file (type png)
@@ -2189,7 +2187,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
 Here is how much of TeX's memory you used:
  29788 strings out of 493334
  548989 string characters out of 3143122
- 640184 words of memory out of 3000000
+ 640183 words of memory out of 3000000
  32722 multiletter control sequences out of 15000+200000
  65634 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2206,7 +2204,7 @@ fb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Apps/MiKTeX 2.9/font
 s/type1/public/lm/lmssbo10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmssbx
 10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Apps/MiKTeX 2.9
 /fonts/type1/public/lm/lmsy8.pfb>
-Output written on Report.pdf (18 pages, 299741 bytes).
+Output written on Report.pdf (18 pages, 300145 bytes).
 PDF statistics:
  364 PDF objects out of 1000 (max. 8388607)
  81 named destinations out of 1000 (max. 500000)

@@ -34,7 +34,7 @@ a = double(S.a); % semieix major
 theta1 = double(S.theta1); % posició inicial en l'òrbita [rad]
 
 % Resolució de les equacions CAS HIPERBÒLIC
-if isreal(e)==0 || isreal(a)==0 || isreal(theta1)==0 || e>1 || e<-1
+if isreal(e)==0 || isreal(a)==0 || isreal(theta1)==0 || isempty(e)==1 || isempty(a)==1 || isempty(theta1)==1 || e>1 || e<-1
     [e,a,theta1] = hyperbolic_orbit(r1,r2,deltat,deltatheta);
 end
 

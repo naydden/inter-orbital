@@ -24,6 +24,6 @@
 \contentsline {section}{\numberline {6.8}Cas 5 de la Terra a Venus}{10}{section.6.8}
 \contentsline {section}{\numberline {6.9}Cas 6 de Mart a la Terra}{10}{section.6.9}
 \contentsline {section}{\numberline {6.10}Cas 7 de Mart a la Terra}{11}{section.6.10}
-\contentsline {section}{\numberline {6.11}Cas 8 de la Terra a Mart}{11}{section.6.11}
+\contentsline {section}{\numberline {6.11}Cas 8 de la Terra a Mart}{12}{section.6.11}
 \contentsline {section}{\numberline {6.12}Cas 9 de la Terra a Mart}{12}{section.6.12}
 \contentsline {chapter}{\numberline {7}Conclusions}{13}{chapter.7}
