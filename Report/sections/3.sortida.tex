@@ -1,5 +1,5 @@
 \chapter{Sortida del planeta origen}
-Un cop es disposa dels elements keplerians eclíptics de l'òrbita de transferència, és possible trobar tant la trajectòria el·líptica que la sonda haurà de prosseguir des de la seva òrbita d'aparcament fins la sortida de l'EdI, com el $\Delta V$ que se li haurà d'aplicar per a que sigui capaç d'arribar al planeta en el temps marcat.
+Un cop es disposa dels elements keplerians eclíptics de l'òrbita de transferència, és possible trobar tant la trajectòria hiperbòlica que la sonda haurà de prosseguir des de la seva òrbita d'aparcament fins la sortida de l'EdI, com el $\Delta V$ que se li haurà d'aplicar per a que sigui capaç se sortir de l'òrbita d'aparcament i arribar al planeta en el temps marcat.
 
 \begin{figure}[H]
 	\centering
@@ -9,8 +9,13 @@ Un cop es disposa dels elements keplerians eclíptics de l'òrbita de transferè
 \end{figure}
 A la figura \ref{esquema_hyperbola} es veuen els elements rellevants que s'han d'obtenir.
 \section{Velocitats a la sortida}
-El primer que cal trobar són les velocitats $V_inf$ i $V_1$, planetocèntrica i heliocèntrica respectivament, de la sonda al moment de sortida de l'EdI del planeta. Això es fa..........
-AQUI JM! Pots fer referencia a \ref{OrbitalVectors}
+Per tal de determinar la hipèrbola de sortida, el primer pas és trobar les velocitats les velocitats planetocèntrica i heliocèntrica de la sonda ,$V_{\infty}$ i $V_1$ respectivament, en el moment de sortida de l'esfera d'influència del planeta. La velocitat planetocèntrica, $V_{\infty}$, s'obté a partir de la velocitat heliocèntrica de la sonda, $V_1$, i de la velocitat heliocèntrica del planeta d'origen, $V_{P0}$, de la següent manera:
+\begin{equation}
+\vec{V}_{\infty} = \vec{V}_{1} - \vec{V}_{P0}
+\end{equation}
+Per tal d'obtenir tant $\vec{V}_{1}$ com $\vec{V}_{P0}$ de manera senzilla i genèrica, s'ha elaborat una funció que a partir d'uns elements orbitals i una anomalia mitjana en un temps de referència, calcula la posició i la velocitat d'un cos en òrbita en un instant determinat de temps \ref{OrbitalVectors}.
+
+D'aquesta manera, s'utilitzen els elements orbitals del planeta d'origen en J2000 per a obtenir la seva posició i velocitat en l'instant determinat, i s'utilitzen els elements orbitals i l'anomalia mitjana de l'òrbita interplanetària, calculats en una altra funció \ref{TransferOrbit}, utilitzant com a temps de referència el propi instant en que surt de l'EdI.
 
 \section{Òrbita planetocèntrica hiperbòlica}
 A les classes de l'assignatura s'ha arribat a les següents relacions \cite{Calaf2017d}:
