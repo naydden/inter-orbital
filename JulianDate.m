@@ -1,4 +1,13 @@
 function JDN=JulianDate(year,month,day)
+% Function that computes the Julian Date of a given Gregorian date
+
+% OUTPUT
+% JDN: Julian Date
+
+% INPUT
+% year: year (Gregorian calendar)
+% month: month (Gregorian calendar)
+% day: day (Gregorian calendar)
 
 a = floor((14 - month) / 12);
 y = year + 4800 - a;

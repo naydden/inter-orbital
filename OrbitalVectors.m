@@ -1,44 +1,44 @@
 function [r,v,theta] = OrbitalVectors (t,mu,a,e,I,RAAN,AP,M0,t0)
-%Function that computes the position vector (r), the velocity vector (v)
-%and the true anomaly (theta) for a given orbital parameters
-%
-%Inputs
-%t: Time at which to compute the outputs, in JD [days]
-%mu: Gravitational constant multipied by the mass of the central body (G*M)
-%    [N*m^2/kg^2]
-%a: Major semiaxis [m]
-%e: Excentricity [dimensionless]
-%I: Inclination [deg]
-%RAAN: Right ascension of the ascending node [deg]
-%AP: Argument of the perigee [deg]
-%M0: Mean anomaly at a reference time [deg]
-%t0: Reference time in JD [days]
-%
-%Outputs
-%r: Vector for the posicion of the orbiting object in the same system of
-%   reference as the orbital parameters [m]
-%r: Vector for the velocity of the orbiting object in the same system of
-%   reference as the orbital parameters [m/s]
-%theta: True anomaly [deg]
+% Function that computes the position vector (r), the velocity vector
+% (v) and the true anomaly (theta) for a given orbital parameters
 
-I=deg2rad(I); %Inclination in rad
-RAAN=deg2rad(RAAN); %Right ascension of the ascending node in rad
-AP=deg2rad(AP); %Argument of the perigee in rad
-M0=deg2rad(M0); %Mean anomaly at reference time t0 in rad
-t=t*24*3600; %Time in seconds
-t0=t0*24*3600; %Reference time in seconds
+% OUTPUTS
+% r: position vector of the orbiting object in the same system of
+% reference as the orbital parameters [m]
+% v: velocity vectorof the orbiting object in the same system of
+% reference as the orbital parameters [m/s]
+% theta: true anomaly [deg]
+
+% INPUTS
+% t: time at which to compute the outputs in JD [days]
+% mu: gravitational constant multiplied by the mass of the central body
+% (G*M) [N*m^2/kg^2]
+% a: semi-major axis [m]
+% e: eccentricity
+% I: inclination [deg]
+% RAAN: right ascension of the ascending node [deg]
+% AP: argument of the perigee [deg]
+% M0: mean anomaly at a reference time [deg]
+% t0: reference time in JD [days]
+
+I=deg2rad(I); %Inclination [rad]
+RAAN=deg2rad(RAAN); %Right ascension of the ascending node [rad]
+AP=deg2rad(AP); %Argument of the perigee [rad]
+M0=deg2rad(M0); %Mean anomaly at reference time t0 [rad]
+t=t*24*3600; %Time [s]
+t0=t0*24*3600; %Reference time [s]
 
 T=sqrt(4*pi^2*a^3/mu); %Period [s]
 n=2*pi/T; %Mean motion [rad/s]
 M=M0+n*(t-t0); %Mean anomaly [rad]
 M=wrapTo2Pi(M); %Mean anomaly between 0 and 2pi
 if M>pi
-    M=M-2*pi; %Correction for the hyperbole equations
+    M=M-2*pi; %Correction for the hyperbolic equations
 end
 
-E0=M+e*sin(M); %Initial excentric anomaly
+E0=M+e*sin(M); %Initial eccentric anomaly
 error=1e-8;
-if e<1 %Elyptic case
+if e<1 %Elliptic case
     p=a*(1-e^2); %Conic parameter
     E=1;
     while abs(E-E0)>error %Newton-Rapson

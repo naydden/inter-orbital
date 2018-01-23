@@ -1,4 +1,3 @@
-
 %% Patched Conics. Interplanetary Trajectories.
 % Authors:
 %   - Silvia Gonzalez
@@ -23,7 +22,6 @@ I_E = 0.00005;
 RAAN_E = -11.26064;
 AP_E = 114.20783;
 M0_E = 358.617;
-a_O = 149598023000;
 
 %Mars data
 a_M = 227939200000;
@@ -69,7 +67,6 @@ v_inf1=v1-v1_E;
 v_inf2=v2-v2_M;
 
 %% Part 4: Results Presentation
-
 N=100;
 A=2;
 t=linspace(t1-A*deltat,t2+A*deltat,(2*A+1)*N);

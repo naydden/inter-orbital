@@ -1,19 +1,23 @@
 \chapter{Codi}
-Com s'ha anat comentant, el codi està dividit en funcions amb una tasca definida i clara. A continuació s'expliquen els codis emprats com a funcions auxiliars pels altres codis ja vists.
-\section{Main}
+Per tal de poder resoldre les equacions definides en els apartats anteriors de forma ràpida i eficient, s'ha elaborat un codi \textit{MATLAB}. A fi de simplificar el seu ús i la seva comprensió, el codi està dividit en diferentes funcions amb una tasca definida i clara. Aquestes es detallen a continuació.
+\section[Programa principal]{Programa principal \textit{main.m}}
 \lstinputlisting[language=Matlab]{../../main.m}
-% \section{Transfer Orbit}
-% \lstinputlisting[language=Matlab]{../../orbita_interplanetaria.m}
-% \lstinputlisting[language=Matlab]{../../hyperbolic_orbit.m}
-\section{outHyperbola}
+\section[Transfer Orbit]{Transfer Orbit \textit{orbitainterplanetaria.m}}
+Funció que calcula els elements orbitals de l'òrbita de transferència. En cas que sigui el·líptica, els resultats s'obtenen gràcies a la funció \textit{solve.m}. En canvi, si és hiperbòlica cal emprar una altra funció desenvolupada a continuació.
+\lstinputlisting[language=Matlab]{../../orbita_interplanetaria.m}
+\subsection[Hyperbolic transfer orbit]{Hyperbolic transfer orbit \textit{hyperbolicorbit.m}}
+Funció que implementa un mètode iteratiu per tal de calcular els elements orbitals d'una òrbita de transferència el·líptica. Cal destacar la importància d'escollir un valor inicial d'iteració adequat, ja que sinó no s'obtenen resultats correctes.
+\lstinputlisting[language=Matlab]{../../hyperbolic_orbit.m}
+\section[Hipèrbola de sortida]{Hipèrbola de sortida \textit{outHyperbola.m}}
 \label{outHyperbola}
 \lstinputlisting[language=Matlab]{../../outHyperbola.m}
-\section{OrbitalVectors}
+\section[Posició i velocitat]{Posició i velocitat \textit{OrbitalVectors.m}}
 \label{OrbitalVectors}
+Càlcul dels vectors de posició i velocitat en funció dels elements orbitals.
 \lstinputlisting[language=Matlab]{../../OrbitalVectors.m}
-\section{JulianDate}
-S'aplica l'algoritme de conversió vist a clase. \cite[pàg.48]{Calaf2017a}
+\section[Data Juliana]{Data Juliana \textit{JulianDate.m}}
+S'aplica l'algoritme de conversió de data Gregoriana a data Juliana vist a classe \cite[pàg.48]{Calaf2017a}.
 \lstinputlisting[language=Matlab]{../../JulianDate.m}
-\section{checkTangent}
-Aquesta funció simplement s'encarrega de rebre un quocient, i segons el signe, decidir en quin quadrant situar l'angle que surt de fer l'arc tangent.
+\section[Correcció d'angles]{Correcció d'angles \textit{checkTangent.m}}
+Aquesta funció simplement s'encarrega de rebre un quocient i, segons el signe, decidir en quin quadrant situar l'angle que s'obté en calcular l'arc tangent.
 \lstinputlisting[language=Matlab]{../../checkTangent.m}

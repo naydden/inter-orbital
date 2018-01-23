@@ -11,23 +11,25 @@
 \BOOKMARK [1][-]{section.3.2}{\322rbita planetoc\350ntrica hiperb\362lica}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.3}{DeltaV}{chapter.3}% 12
 \BOOKMARK [0][-]{chapter.4}{Codi}{}% 13
-\BOOKMARK [1][-]{section.4.1}{Main}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.2}{outHyperbola}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.3}{OrbitalVectors}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.4}{JulianDate}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.5}{checkTangent}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Resultats}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Cas de la Terra a Mart}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{Cas de Mart a J\372piter}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.3}{Cas de la Terra a Mart}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.4}{Cas 1 de Mart a J\372piter}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.5}{Cas 2 de la Terra a Mart}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.6}{Cas 3 de la Terra a Mart}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.7}{Cas 4 de la Terra a Mart}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.8}{Cas 5 de la Terra a Venus}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.9}{Cas 6 de Mart a la Terra}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.10}{Cas 7 de Mart a la Terra}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.11}{Cas 8 de la Terra a Mart}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.12}{Cas 9 de la Terra a Mart}{chapter.5}% 31
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 32
-\BOOKMARK [0][-]{chapter.7}{Bibliografia}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Programa principal}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{Transfer Orbit}{chapter.4}% 15
+\BOOKMARK [2][-]{subsection.4.2.1}{Hyperbolic transfer orbit}{section.4.2}% 16
+\BOOKMARK [1][-]{section.4.3}{Hip\350rbola de sortida}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.4}{Posici\363 i velocitat}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.5}{Data Juliana}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.6}{Correcci\363 d'angles}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Resultats}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Cas de la Terra a Mart}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.2}{Cas de Mart a J\372piter}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.3}{Cas de la Terra a Mart}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.4}{Cas 1 de Mart a J\372piter}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.5}{Cas 2 de la Terra a Mart}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.6}{Cas 3 de la Terra a Mart}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.7}{Cas 4 de la Terra a Mart}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.8}{Cas 5 de la Terra a Venus}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.9}{Cas 6 de Mart a la Terra}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.10}{Cas 7 de Mart a la Terra}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.11}{Cas 8 de la Terra a Mart}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.12}{Cas 9 de la Terra a Mart}{chapter.5}% 33
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 34
+\BOOKMARK [0][-]{chapter.7}{Bibliografia}{}% 35

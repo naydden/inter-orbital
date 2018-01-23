@@ -1,8 +1,21 @@
 function [e,a,theta] = hyperbolic_orbit(r1,r2,deltat,deltatheta)
+% Function that computes the excentricity, the semimajor axis and the
+% true anomaly of an hyperbolic orbit using an iterative algorithm
+
+% OUTPUTS
+% e: eccentricity
+% a: semi-major axis [AU]
+% theta: true anomaly in t1 [rad]
+
+% INPUTS
+% r1: heliocentric position of the probe in t2 [AU]
+% r2: heliocentric position of the probe in t2 [AU]
+% deltat: t2-t1 [days]
+% deltatheta: increment of the true anomaly between t1 and t2 [rad]
 
 resta = 1000;
-d = 1e-6;
-theta = pi/2-acos(dot(r1,r2)/(norm(r1)*norm(r2))); % valor inicial que es dóna a theta
+d = 1e-6; % error
+theta = pi/2-acos(dot(r1,r2)/(norm(r1)*norm(r2))); % initial value
 if theta>deg2rad(-50)
     theta = theta-deg2rad(10);
 end
