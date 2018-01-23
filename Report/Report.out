@@ -3,27 +3,29 @@
 \BOOKMARK [0][-]{chapter.1}{Introducci\363}{}% 3
 \BOOKMARK [0][-]{chapter.2}{\322rbita el\267l\355ptica helioc\350ntrica}{}% 4
 \BOOKMARK [1][-]{section.2.1}{Plantejament d'equacions}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{M\350tode de resoluci\363}{chapter.2}% 6
-\BOOKMARK [0][-]{chapter.3}{Sortida del planeta origen}{}% 7
-\BOOKMARK [1][-]{section.3.1}{\322rbita planetoc\350ntrica hiperb\362lica}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{\322rbita d'aparcament}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.3}{DeltaV}{chapter.3}% 10
-\BOOKMARK [0][-]{chapter.4}{Arribada al planeta dest\355}{}% 11
-\BOOKMARK [1][-]{section.4.1}{\322rbita planetoc\350ntrica hiperb\362lica}{chapter.4}% 12
-\BOOKMARK [1][-]{section.4.2}{\322rbita d'aparcament}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.3}{DeltaV}{chapter.4}% 14
-\BOOKMARK [0][-]{chapter.5}{Funcions auxiliars}{}% 15
-\BOOKMARK [0][-]{chapter.6}{Resultats}{}% 16
-\BOOKMARK [1][-]{section.6.1}{Cas de la Terra a Mart}{chapter.6}% 17
-\BOOKMARK [1][-]{section.6.2}{Cas de Mart a J\372piter}{chapter.6}% 18
-\BOOKMARK [1][-]{section.6.3}{Cas de la Terra a Mart}{chapter.6}% 19
-\BOOKMARK [1][-]{section.6.4}{Cas 1 de Mart a J\372piter}{chapter.6}% 20
-\BOOKMARK [1][-]{section.6.5}{Cas 2 de la Terra a Mart}{chapter.6}% 21
-\BOOKMARK [1][-]{section.6.6}{Cas 3 de la Terra a Mart}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.7}{Cas 4 de la Terra a Mart}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.8}{Cas 5 de la Terra a Venus}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.9}{Cas 6 de Mart a la Terra}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.10}{Cas 7 de Mart a la Terra}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.11}{Cas 8 de la Terra a Mart}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.12}{Cas 9 de la Terra a Mart}{chapter.6}% 28
-\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 29
+\BOOKMARK [2][-]{subsection.2.1.1}{Traject\362ria el\267l\355ptica}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.2}{Traject\362ria hiperb\362lica}{section.2.1}% 7
+\BOOKMARK [1][-]{section.2.2}{M\350tode de resoluci\363}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Sortida del planeta origen}{}% 9
+\BOOKMARK [1][-]{section.3.1}{\322rbita planetoc\350ntrica hiperb\362lica}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{\322rbita d'aparcament}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{DeltaV}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Arribada al planeta dest\355}{}% 13
+\BOOKMARK [1][-]{section.4.1}{\322rbita planetoc\350ntrica hiperb\362lica}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{\322rbita d'aparcament}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.3}{DeltaV}{chapter.4}% 16
+\BOOKMARK [0][-]{chapter.5}{Funcions auxiliars}{}% 17
+\BOOKMARK [0][-]{chapter.6}{Resultats}{}% 18
+\BOOKMARK [1][-]{section.6.1}{Cas de la Terra a Mart}{chapter.6}% 19
+\BOOKMARK [1][-]{section.6.2}{Cas de Mart a J\372piter}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.3}{Cas de la Terra a Mart}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.4}{Cas 1 de Mart a J\372piter}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.5}{Cas 2 de la Terra a Mart}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.6}{Cas 3 de la Terra a Mart}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.7}{Cas 4 de la Terra a Mart}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.8}{Cas 5 de la Terra a Venus}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.9}{Cas 6 de Mart a la Terra}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.10}{Cas 7 de Mart a la Terra}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.11}{Cas 8 de la Terra a Mart}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.12}{Cas 9 de la Terra a Mart}{chapter.6}% 30
+\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 31

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.1)  23 JAN 2018 01:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.1)  23 JAN 2018 03:57
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -1847,7 +1847,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 26.
 ("C:\Apps\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (doc_config/cover.tex
-<./doc_config/image.png, id=119, 640.3925pt x 170.6375pt>
+<./doc_config/image.png, id=127, 640.3925pt x 170.6375pt>
 File: ./doc_config/image.png Graphic file (type png)
 
 <use ./doc_config/image.png>
@@ -1881,6 +1881,11 @@ LaTeX Font Info:    No file OMSlmss.fd. on input line 4.
 LaTeX Font Warning: Font shape `OMS/lmss/bx/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textperiodcentered' on input line 4.
+
+
+LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textperiodcentered' on input line 6.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
@@ -1977,7 +1982,7 @@ l.1 \chapter
 
 ]
 Cap\IeC {\'\i }tol 2.
-<./plots/esquema_orbi.png, id=210, 557.83406pt x 339.51843pt>
+<./plots/esquema_orbi.png, id=232, 557.83406pt x 339.51843pt>
 File: ./plots/esquema_orbi.png Graphic file (type png)
 
 <use ./plots/esquema_orbi.png>
@@ -2003,29 +2008,31 @@ Package pdftex.def Info: ./doc_config/image.png used on input line 14.
  [2
 
  <./plots/esquema_orbi.png>]
-<./plots/triangle.png, id=219, 789.70032pt x 401.24907pt>
+<./plots/triangle.png, id=241, 789.70032pt x 401.24907pt>
 File: ./plots/triangle.png Graphic file (type png)
 
 <use ./plots/triangle.png>
 Package pdftex.def Info: ./plots/triangle.png used on input line 24.
 (pdftex.def)             Requested size: 236.91193pt x 120.37564pt.
-
-
-LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 51.
-
-File: ./doc_config/image.png Graphic file (type png)
-<use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 68.
-(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [3 <./plots/triangle.png>])
-(sections/3.sortida.tex
 File: ./doc_config/image.png Graphic file (type png)
  <use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 1.
+Package pdftex.def Info: ./doc_config/image.png used on input line 62.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [3 <./plots/triangle.png>]
+File: ./doc_config/image.png Graphic file (type png)
+ <use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 108.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [4]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 114.
+) (sections/3.sortida.tex
+File: ./doc_config/image.png Graphic file (type png)
+
+<use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 1.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [5]
 Cap\IeC {\'\i }tol 3.
 ) (sections/4.arribada.tex
 
@@ -2044,7 +2051,7 @@ File: ./doc_config/image.png Graphic file (type png)
 <use ./doc_config/image.png>
 Package pdftex.def Info: ./doc_config/image.png used on input line 1.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [5
+ [6
 
 ]
 Cap\IeC {\'\i }tol 4.
@@ -2065,7 +2072,7 @@ File: ./doc_config/image.png Graphic file (type png)
 <use ./doc_config/image.png>
 Package pdftex.def Info: ./doc_config/image.png used on input line 1.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [6
+ [7
 
 ]
 Cap\IeC {\'\i }tol 5.
@@ -2086,40 +2093,127 @@ File: ./doc_config/image.png Graphic file (type png)
 <use ./doc_config/image.png>
 Package pdftex.def Info: ./doc_config/image.png used on input line 1.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [7
-
-]
-Cap\IeC {\'\i }tol 6.
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 41.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 41.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 41.
-
-File: ./doc_config/image.png Graphic file (type png)
-<use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 41.
-(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [8
 
 ]
+Cap\IeC {\'\i }tol 6.
+Package epstopdf Info: Source file: <./plots/ex1.eps>
+(epstopdf)                    date: 2018-01-23 02:08:44
+(epstopdf)                    size: 220946 bytes
+(epstopdf)             Output file: <./plots/ex1-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-23 03:13:24
+(epstopdf)                    size: 18242 bytes
+(epstopdf)             Command: <epstopdf --outfile=./plots/ex1-eps-converted-t
+o.pdf ./plots/ex1.eps>
+(epstopdf)             \includegraphics on input line 21.
+Package epstopdf Info: Output file is already uptodate.
+<./plots/ex1-eps-converted-to.pdf, id=310, 421.575pt x 316.18124pt>
+File: ./plots/ex1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./plots/ex1-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/ex1-eps-converted-to.pdf used on input line 21
+.
+(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 28.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 28.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 28.
+
+File: ./doc_config/image.png Graphic file (type png)
+<use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 28.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [9
+
+ <./plots/ex1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./plots/ex3.eps>
+(epstopdf)                    date: 2018-01-23 03:56:21
+(epstopdf)                    size: 38280 bytes
+(epstopdf)             Output file: <./plots/ex3-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=./plots/ex3-eps-converted-t
+o.pdf ./plots/ex3.eps>
+(epstopdf)             \includegraphics on input line 60.
+runsystem(epstopdf --outfile=./plots/ex3-eps-converted-to.pdf ./plots/ex3.eps).
+..executed.
+
+Package epstopdf Info: Result file: <./plots/ex3-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-23 03:57:14
+(epstopdf)                    size: 8080 bytes.
+
+<./plots/ex3-eps-converted-to.pdf, id=322, 421.575pt x 316.18124pt>
+File: ./plots/ex3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./plots/ex3-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/ex3-eps-converted-to.pdf used on input line 60
+.
+(pdftex.def)             Requested size: 400.49397pt x 300.37047pt.
 File: ./doc_config/image.png Graphic file (type png)
  <use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 104.
-(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [9]
-File: ./doc_config/image.png Graphic file (type png)
-
-<use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 155.
+Package pdftex.def Info: ./doc_config/image.png used on input line 63.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
  [10]
+Package epstopdf Info: Source file: <./plots/cas2.eps>
+(epstopdf)                    date: 2018-01-23 02:19:20
+(epstopdf)                    size: 220979 bytes
+(epstopdf)             Output file: <./plots/cas2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-23 03:13:25
+(epstopdf)                    size: 18471 bytes
+(epstopdf)             Command: <epstopdf --outfile=./plots/cas2-eps-converted-
+to.pdf ./plots/cas2.eps>
+(epstopdf)             \includegraphics on input line 99.
+Package epstopdf Info: Output file is already uptodate.
+
+<./plots/cas2-eps-converted-to.pdf, id=327, 421.575pt x 316.18124pt>
+File: ./plots/cas2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./plots/cas2-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/cas2-eps-converted-to.pdf used on input line 9
+9.
+(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
+File: ./doc_config/image.png Graphic file (type png)
+ <use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 101.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [11 <./plots/ex3-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./plots/cas3.eps>
+(epstopdf)                    date: 2018-01-23 02:24:22
+(epstopdf)                    size: 220983 bytes
+(epstopdf)             Output file: <./plots/cas3-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-23 03:13:26
+(epstopdf)                    size: 18241 bytes
+(epstopdf)             Command: <epstopdf --outfile=./plots/cas3-eps-converted-
+to.pdf ./plots/cas3.eps>
+(epstopdf)             \includegraphics on input line 121.
+Package epstopdf Info: Output file is already uptodate.
+
+<./plots/cas3-eps-converted-to.pdf, id=335, 421.575pt x 316.18124pt>
+File: ./plots/cas3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./plots/cas3-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/cas3-eps-converted-to.pdf used on input line 1
+21.
+(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
+File: ./doc_config/image.png Graphic file (type png)
+ <use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 124.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [12 <./plots/cas2-eps-converted-to.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./doc_config/image.png Graphic file (type png)
+<use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 162.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [13 <./plots/cas3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./plots/cas7.eps>
 (epstopdf)                    date: 2018-01-22 02:28:10
 (epstopdf)                    size: 38400 bytes
@@ -2128,27 +2222,75 @@ Package epstopdf Info: Source file: <./plots/cas7.eps>
 (epstopdf)                    size: 8059 bytes
 (epstopdf)             Command: <epstopdf --outfile=./plots/cas7-eps-converted-
 to.pdf ./plots/cas7.eps>
-(epstopdf)             \includegraphics on input line 174.
+(epstopdf)             \includegraphics on input line 194.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/cas7-eps-converted-to.pdf, id=285, 421.575pt x 316.18124pt>
+<./plots/cas7-eps-converted-to.pdf, id=358, 421.575pt x 316.18124pt>
 File: ./plots/cas7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/cas7-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/cas7-eps-converted-to.pdf used on input line 1
-74.
+94.
 (pdftex.def)             Requested size: 400.49397pt x 300.37047pt.
 File: ./doc_config/image.png Graphic file (type png)
  <use ./doc_config/image.png>
-Package pdftex.def Info: ./doc_config/image.png used on input line 181.
+Package pdftex.def Info: ./doc_config/image.png used on input line 197.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [11 <./plots/cas7-eps-converted-to.pdf>]) (sections/7.conclusions.tex
+ [14]
+Package epstopdf Info: Source file: <./plots/cas8.eps>
+(epstopdf)                    date: 2018-01-23 03:50:44
+(epstopdf)                    size: 38366 bytes
+(epstopdf)             Output file: <./plots/cas8-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-23 03:53:08
+(epstopdf)                    size: 8101 bytes
+(epstopdf)             Command: <epstopdf --outfile=./plots/cas8-eps-converted-
+to.pdf ./plots/cas8.eps>
+(epstopdf)             \includegraphics on input line 216.
+Package epstopdf Info: Output file is already uptodate.
+
+<./plots/cas8-eps-converted-to.pdf, id=364, 421.575pt x 316.18124pt>
+File: ./plots/cas8-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./plots/cas8-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/cas8-eps-converted-to.pdf used on input line 2
+16.
+(pdftex.def)             Requested size: 400.49397pt x 300.37047pt.
+File: ./doc_config/image.png Graphic file (type png)
+ <use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 219.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [15 <./plots/cas7-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./plots/cas9.eps>
+(epstopdf)                    date: 2018-01-23 03:51:41
+(epstopdf)                    size: 38444 bytes
+(epstopdf)             Output file: <./plots/cas9-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-23 03:53:13
+(epstopdf)                    size: 8135 bytes
+(epstopdf)             Command: <epstopdf --outfile=./plots/cas9-eps-converted-
+to.pdf ./plots/cas9.eps>
+(epstopdf)             \includegraphics on input line 238.
+Package epstopdf Info: Output file is already uptodate.
+
+<./plots/cas9-eps-converted-to.pdf, id=372, 421.575pt x 316.18124pt>
+File: ./plots/cas9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./plots/cas9-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/cas9-eps-converted-to.pdf used on input line 2
+38.
+(pdftex.def)             Requested size: 400.49397pt x 300.37047pt.
+) (sections/7.conclusions.tex
 File: ./doc_config/image.png Graphic file (type png)
 
 <use ./doc_config/image.png>
 Package pdftex.def Info: ./doc_config/image.png used on input line 1.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [12]
+ [16 <./plots/cas8-eps-converted-to.pdf>]
+File: ./doc_config/image.png Graphic file (type png)
+
+<use ./doc_config/image.png>
+Package pdftex.def Info: ./doc_config/image.png used on input line 1.
+(pdftex.def)             Requested size: 131.3497pt x 35.0pt.
+ [17 <./plots/cas9-eps-converted-to.pdf>]
 Cap\IeC {\'\i }tol 7.
 ) 
 AED: lastpage setting LastPage
@@ -2168,7 +2310,7 @@ File: ./doc_config/image.png Graphic file (type png)
 <use ./doc_config/image.png>
 Package pdftex.def Info: ./doc_config/image.png used on input line 77.
 (pdftex.def)             Requested size: 131.3497pt x 35.0pt.
- [13
+ [18
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
@@ -2177,7 +2319,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 4F0462EF6DFDADCFDDFD7520CAD3A925;1949.
+(rerunfilecheck)             Checksum: D07E0ADC138670F0E7099484BDEFA36D;2119.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2185,28 +2327,29 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 29788 strings out of 493334
- 548989 string characters out of 3143122
- 640183 words of memory out of 3000000
- 32722 multiletter control sequences out of 15000+200000
- 65634 words of font info for 62 fonts, out of 3000000 for 9000
+ 29853 strings out of 493334
+ 550410 string characters out of 3143122
+ 643351 words of memory out of 3000000
+ 32761 multiletter control sequences out of 15000+200000
+ 71480 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,16n,84p,10486b,836s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Apps/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathit.enc}{C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.e
-nc}{C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Apps/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-ec.enc}<C:/Apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+{C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Apps/MiKTeX 2.9/fonts/en
+c/dvips/lm/lm-rm.enc}{C:/Apps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/A
+pps/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Apps/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-mathex.enc}<C:/Apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Apps/MiKTeX 2.9/f
 onts/type1/public/lm/lmmi10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmmi8
 .pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Apps/MiKTeX 2.9/fo
-nts/type1/public/lm/lmr8.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmss10.p
-fb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Apps/MiKTeX 2.9/font
-s/type1/public/lm/lmssbo10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmssbx
-10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Apps/MiKTeX 2.9
-/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Report.pdf (18 pages, 300145 bytes).
+nts/type1/public/lm/lmr6.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb
+><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Apps/MiKTeX 2.9/fonts
+/type1/public/lm/lmss9.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.p
+fb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Apps/MiKTeX 2.9/f
+onts/type1/public/lm/lmsso10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+10.pfb><C:/Apps/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Report.pdf (23 pages, 418648 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 

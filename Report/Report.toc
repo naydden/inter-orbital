@@ -3,27 +3,29 @@
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}\IeC {\`O}rbita el\IeC {\textperiodcentered }l\IeC {\'\i }ptica helioc\IeC {\`e}ntrica}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Plantejament d'equacions}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}M\IeC {\`e}tode de resoluci\IeC {\'o}}{4}{section.2.2}
-\contentsline {chapter}{\numberline {3}Sortida del planeta origen}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}\IeC {\`O}rbita d'aparcament}{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}DeltaV}{5}{section.3.3}
-\contentsline {chapter}{\numberline {4}Arribada al planeta dest\IeC {\'\i }}{6}{chapter.4}
-\contentsline {section}{\numberline {4.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{6}{section.4.1}
-\contentsline {section}{\numberline {4.2}\IeC {\`O}rbita d'aparcament}{6}{section.4.2}
-\contentsline {section}{\numberline {4.3}DeltaV}{6}{section.4.3}
-\contentsline {chapter}{\numberline {5}Funcions auxiliars}{7}{chapter.5}
-\contentsline {chapter}{\numberline {6}Resultats}{8}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cas de la Terra a Mart}{8}{section.6.1}
-\contentsline {section}{\numberline {6.2}Cas de Mart a J\IeC {\'u}piter}{8}{section.6.2}
-\contentsline {section}{\numberline {6.3}Cas de la Terra a Mart}{8}{section.6.3}
-\contentsline {section}{\numberline {6.4}Cas 1 de Mart a J\IeC {\'u}piter}{9}{section.6.4}
-\contentsline {section}{\numberline {6.5}Cas 2 de la Terra a Mart}{9}{section.6.5}
-\contentsline {section}{\numberline {6.6}Cas 3 de la Terra a Mart}{9}{section.6.6}
-\contentsline {section}{\numberline {6.7}Cas 4 de la Terra a Mart}{10}{section.6.7}
-\contentsline {section}{\numberline {6.8}Cas 5 de la Terra a Venus}{10}{section.6.8}
-\contentsline {section}{\numberline {6.9}Cas 6 de Mart a la Terra}{10}{section.6.9}
-\contentsline {section}{\numberline {6.10}Cas 7 de Mart a la Terra}{11}{section.6.10}
-\contentsline {section}{\numberline {6.11}Cas 8 de la Terra a Mart}{12}{section.6.11}
-\contentsline {section}{\numberline {6.12}Cas 9 de la Terra a Mart}{12}{section.6.12}
-\contentsline {chapter}{\numberline {7}Conclusions}{13}{chapter.7}
+\contentsline {subsection}{\numberline {2.1.1}Traject\IeC {\`o}ria el\IeC {\textperiodcentered }l\IeC {\'\i }ptica}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Traject\IeC {\`o}ria hiperb\IeC {\`o}lica}{4}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}M\IeC {\`e}tode de resoluci\IeC {\'o}}{5}{section.2.2}
+\contentsline {chapter}{\numberline {3}Sortida del planeta origen}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}\IeC {\`O}rbita d'aparcament}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}DeltaV}{6}{section.3.3}
+\contentsline {chapter}{\numberline {4}Arribada al planeta dest\IeC {\'\i }}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}\IeC {\`O}rbita planetoc\IeC {\`e}ntrica hiperb\IeC {\`o}lica}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}\IeC {\`O}rbita d'aparcament}{7}{section.4.2}
+\contentsline {section}{\numberline {4.3}DeltaV}{7}{section.4.3}
+\contentsline {chapter}{\numberline {5}Funcions auxiliars}{8}{chapter.5}
+\contentsline {chapter}{\numberline {6}Resultats}{9}{chapter.6}
+\contentsline {section}{\numberline {6.1}Cas de la Terra a Mart}{9}{section.6.1}
+\contentsline {section}{\numberline {6.2}Cas de Mart a J\IeC {\'u}piter}{10}{section.6.2}
+\contentsline {section}{\numberline {6.3}Cas de la Terra a Mart}{10}{section.6.3}
+\contentsline {section}{\numberline {6.4}Cas 1 de Mart a J\IeC {\'u}piter}{11}{section.6.4}
+\contentsline {section}{\numberline {6.5}Cas 2 de la Terra a Mart}{11}{section.6.5}
+\contentsline {section}{\numberline {6.6}Cas 3 de la Terra a Mart}{12}{section.6.6}
+\contentsline {section}{\numberline {6.7}Cas 4 de la Terra a Mart}{13}{section.6.7}
+\contentsline {section}{\numberline {6.8}Cas 5 de la Terra a Venus}{13}{section.6.8}
+\contentsline {section}{\numberline {6.9}Cas 6 de Mart a la Terra}{14}{section.6.9}
+\contentsline {section}{\numberline {6.10}Cas 7 de Mart a la Terra}{14}{section.6.10}
+\contentsline {section}{\numberline {6.11}Cas 8 de la Terra a Mart}{15}{section.6.11}
+\contentsline {section}{\numberline {6.12}Cas 9 de la Terra a Mart}{16}{section.6.12}
+\contentsline {chapter}{\numberline {7}Conclusions}{18}{chapter.7}

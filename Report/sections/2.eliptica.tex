@@ -48,6 +48,7 @@ De la figura \ref{esquema_orb} també es poden deduir l'ascensió recta del node
 \label{eqw}
 \end{equation}
 
+\subsection{Trajectòria el·líptica}
 Finalment, a partir dels vectors de posició també s'obtenen els tres elements orbitals que falten. Assumint que la trajectòria és el·líptica, els mòduls dels vectors de posició vénen donats per les expressions:
 \begin{equation}
 r_{1}=\frac{a\left(1-e^{2}\right)}{1+e\cos\theta_{1}}
@@ -78,12 +79,40 @@ a=\frac{r_{1}\left(1+e\cos\theta_{1}\right)}{1-e^{2}}
 \end{multline}
 en què tant els vectors $\vec{r_{1}}$ i $\vec{r_{2}}$ com el semieix major $a$ estan expressats en AU, per tal de treballar amb valors més simples.
 
+\subsection{Trajectòria hiperbòlica}
+En el cas que la trajectòria sigui hiperbòlica, les equacions varien lleugerament. Les posicions vénen donades per les expressions:
+\begin{equation}
+r_{1}=\frac{a\left(e^{2}-1\right)}{1+e\cos\theta_{1}}
+\end{equation}
+\begin{equation}
+r_{2}=\frac{a\left(e^{2}-1\right)}{1+e\cos\left(\theta_{1}+\Delta\theta\right)}
+\end{equation}
+I la relació entre el temps i la posició de la sonda s'expressa amb l'equació:
+\begin{equation}
+\frac{2\pi t}{T}=\sqrt{e^{2}-1}\left[\frac{e\sin\theta}{1+e\cos\theta}-\frac{1}{\sqrt{e^{2}-1}}\ln\left\|\frac{\tan\frac{\theta}{2}+\sqrt{\frac{e+1}{e-1}}}{\tan\frac{\theta}{2}-\sqrt{\frac{e+1}{e-1}}}\right\|\right]
+\end{equation}
+Per tant, el sistema de tres equacions i tres incògnites és el següent:
+\begin{equation}
+e=\frac{r_{2}-r_{1}}{r_{1}\cos\theta_{1}-r{2}\cos\left(\theta_{1}+\Delta\theta\right)}
+\label{eqeh}
+\end{equation}
+\begin{equation}
+a=\frac{r_{1}\left(1+e\cos\theta_{1}\right)}{e^{2}-1}
+\label{eqah}
+\end{equation}
+\begin{multline}
+	t_{2}-t_{1}=\frac{365.25}{2\pi}a^{3/2}\cdot \\
+	\cdot\Bigg[\frac{e\sqrt{e^{2}-1}\sin{\left(\theta_{1}+\Delta\theta\right)}}{1+e\cos{\left(\theta_{1}+\Delta\theta\right)}}-\ln\left\|\frac{\tan\frac{\left(\theta_{1}+\Delta\theta\right)}{2}+\sqrt{\frac{e+1}{e-1}}}{\tan\frac{\left(\theta_{1}+\Delta\theta\right)}{2}-\sqrt{\frac{e+1}{e-1}}}\right\|- \\
+	-\frac{e\sqrt{e^{2}-1}\sin{\theta_{1}}}{1+e\cos{\theta_{1}}}-\ln\left\|\frac{\tan\frac{\theta_{1}}{2}+\sqrt{\frac{e+1}{e-1}}}{\tan\frac{\theta_{1}}{2}-\sqrt{\frac{e+1}{e-1}}}\right\|\Bigg]
+	\label{eqth}
+\end{multline}
+
 \section{Mètode de resolució}
 \begin{enumerate}
 	\item Es calcula la posició del planeta d'origen en l'instant de temps de sortida i la posició del planeta de destí en l'instant de temps d'arribada.
 	\item A partir dels vectors de posició es calculen les longituds i latituds eclíptiques dels planetes.
-	\item A partir del sistema d'equacions donat per \ref{eqe}, \ref{eqa} i \ref{eqt} s'obtenen l'excentricitat $e$ i el semieix major $a$ de l'òrbita, i l'anomalia vertadera de la sonda $\theta_{1}$ en l'instant de sortida.
+	\item A partir del sistema d'equacions donat per \ref{eqe}, \ref{eqa} i \ref{eqt} s'obtenen l'excentricitat $e$ i el semieix major $a$ de l'òrbita, i l'anomalia vertadera de la sonda $\theta_{1}$ en l'instant de sortida. Aquest sistema es resol mitjançant la funció \textit{solve} de \textit{MATLAB}. Si no s'obté cap solució (o les solucions no són coherents), s'assumeix que una trajectòria el·líptica no és possible i, per tant, l'òrbita ha de ser hiperbòlica. En aquest cas, es resol el sistema donat per \ref{eqeh}, \ref{eqah} i \ref{eqth} mitjançant un mètode iteratiu.
 	\item Es calcula la inclinació a partir de les equacions donades pels triangles esfèrics \ref{eqi}.
-	\item Càlcul de la longitud eclítpica del node ascendent donat per \ref{eqOmega}.
+	\item Càlcul de la longitud eclíptica del node ascendent donat per \ref{eqOmega}.
 	\item Es calcula l'argument del periheli amb \ref{eqw}.
 \end{enumerate}
